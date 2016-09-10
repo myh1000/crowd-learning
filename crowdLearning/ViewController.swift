@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var joinButton: UIButton!
 //    @IBOutlet weak var same: UIButton!
     private var model : NSMutableDictionary = [:]
+    private let ref = FIRDatabase.database().reference()
     var postDict: AnyObject?
 
     
@@ -27,7 +28,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         joinButton.layer.cornerRadius = 5;
         // Do any additional setup after loading the view, typically from a nib.
-        let ref = FIRDatabase.database().reference()
         
         ref.child("model_structure").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             self.model.setObject(snapshot.value!["hidden_size"] as! String, forKey: "hidden_size")
@@ -79,6 +79,8 @@ class ViewController: UIViewController {
             }
             print(self.network.hiddenWeights)
             print(self.network.outputWeights)
+            self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
+            self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
             self.network.writeToFile("data")
         }
     }
