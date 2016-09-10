@@ -21,6 +21,7 @@
 		000CB9F11D83A766006EEDBB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9E91D83A766006EEDBB /* README.md */; };
 		000CB9F21D83A766006EEDBB /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9EA1D83A766006EEDBB /* Storage.swift */; };
 		000CB9F31D83A766006EEDBB /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9EB1D83A766006EEDBB /* Vector.swift */; };
+		00B2E46E1D83DECF000AF88A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E46D1D83DECF000AF88A /* GoogleService-Info.plist */; };
 		50828C922508CC504722FD7F /* Pods_crowdLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CF697D2DE728C4CC741136 /* Pods_crowdLearningTests.framework */; };
 		61B390F281B1B8DB995D65F0 /* Pods_crowdLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F9F6C69DC22C24101DA5EE /* Pods_crowdLearning.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		000CB9E91D83A766006EEDBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		000CB9EA1D83A766006EEDBB /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		000CB9EB1D83A766006EEDBB /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		00B2E46D1D83DECF000AF88A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E6E1EB3E5CC4A3644375FBF /* Pods-crowdLearningTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearningTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5113C951388843FE7BCBAB1D /* Pods-crowdLearningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearningTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests.release.xcconfig"; sourceTree = "<group>"; };
 		97F9F6C69DC22C24101DA5EE /* Pods_crowdLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowdLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				000CB9CA1D83A72D006EEDBB /* Assets.xcassets */,
 				000CB9CC1D83A72D006EEDBB /* LaunchScreen.storyboard */,
 				000CB9CF1D83A72D006EEDBB /* Info.plist */,
+				00B2E46D1D83DECF000AF88A /* GoogleService-Info.plist */,
 				000CB9E31D83A759006EEDBB /* SwiftAI */,
 			);
 			path = crowdLearning;
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				000CB9CE1D83A72D006EEDBB /* LaunchScreen.storyboard in Resources */,
+				00B2E46E1D83DECF000AF88A /* GoogleService-Info.plist in Resources */,
 				000CB9CB1D83A72D006EEDBB /* Assets.xcassets in Resources */,
 				000CB9C91D83A72D006EEDBB /* Main.storyboard in Resources */,
 			);
