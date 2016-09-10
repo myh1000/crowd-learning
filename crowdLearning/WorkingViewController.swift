@@ -52,11 +52,7 @@ class WorkingViewController: UIViewController {
         }
         
         ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
-            print("sjdaskf")
-            print(snapshot.key)
-            print(snapshot.value)
             if (snapshot.key == "request_recieved" && snapshot.value as! String == "false") {
-                print("ABHABHAHBAH")
                 self.performSegueWithIdentifier("unwindsmae", sender: self)
             }
         })
