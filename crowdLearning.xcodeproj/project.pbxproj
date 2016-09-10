@@ -238,6 +238,7 @@
 				TargetAttributes = {
 					00A44CD81D839791002FEC2E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7GVGCS6EES;
 					};
 					00A44CEC1D839791002FEC2E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -526,6 +527,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/Firebase/Headers",
@@ -541,9 +544,11 @@
 					"\"${PODS_ROOT}/BuildHeaders\"\n${POD_ROOT}/BuildHeaders",
 				);
 				INFOPLIST_FILE = crowdLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myh1000.crowdLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "crowdLearning/crowdLearning-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -555,6 +560,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/Firebase/Headers",
@@ -570,9 +577,11 @@
 					"\"${PODS_ROOT}/BuildHeaders\"\n${POD_ROOT}/BuildHeaders",
 				);
 				INFOPLIST_FILE = crowdLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myh1000.crowdLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "crowdLearning/crowdLearning-Bridging-Header.h";
 			};
 			name = Release;

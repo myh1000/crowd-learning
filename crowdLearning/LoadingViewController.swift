@@ -100,7 +100,7 @@ class LoadingViewController: UIViewController {
                 epoch += 1
             }
             
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC)))
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(5 * Double(NSEC_PER_SEC)))
             dispatch_after(delayTime, dispatch_get_main_queue()) {
                 ref.child("status\(Int(self.eyedee-1))").setValue("recieveFromClient");
                 print("trying to set firebase")
