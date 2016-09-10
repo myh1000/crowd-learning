@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     private var network: FFNN!
     private let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"
     @IBOutlet weak var joinButton: UIButton!
+//    @IBOutlet weak var same: UIButton!
+    private var model : NSMutableDictionary = [:]
+    var postDict: AnyObject?
 
     
     override func viewDidLoad() {
@@ -25,9 +28,27 @@ class ViewController: UIViewController {
         joinButton.layer.cornerRadius = 5;
         // Do any additional setup after loading the view, typically from a nib.
         let ref = FIRDatabase.database().reference()
-        ref.observeEventType(.ChildAdded, withBlock: { (snapshot) -> Void in
-            print(snapshot)
+        
+        ref.child("model_structure").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            self.model.setObject(snapshot.value!["hidden_size"] as! String, forKey: "hidden_size")
+            self.model.setObject(snapshot.value!["num_inputs"] as! String, forKey: "num_inputs")
+            self.model.setObject(snapshot.value!["num_layers"] as! String, forKey: "num_layers")
+            self.model.setObject(snapshot.value!["num_outputs"] as! String, forKey: "num_outputs")
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        ref.child("model_structure").observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
+            let keyname = snapshot.key
+//            self.model.setObject(snapshot.value as! String, forKey: keyname)
         })
+        ref.child("request_recieved").observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
+            print(snapshot);
+//            self.startTraining()
+        })
+//        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
+//            let index = self.snapshots.indexOf(snapshot)
+//            self.snapshots.append(snapshot)
+//        })
         network = FFNN(inputs: 100, hidden: 64, outputs: 10,
                    learningRate: 0.7, momentum: 0.4, weights: nil,
                    activationFunction : .Sigmoid, errorFunction: .CrossEntropy(average: false))
@@ -35,6 +56,7 @@ class ViewController: UIViewController {
         print("SAME")
     }
     
+
     func startTraining() {
         // Dispatches training process to background thread
         dispatch_async(self.networkQueue) {
