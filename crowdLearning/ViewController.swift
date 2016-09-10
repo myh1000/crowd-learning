@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     /// Serial queue for synchronizing access to neural network from multiple threads
     private let networkQueue = dispatch_queue_create("com.SwiftAI.networkQueue", DISPATCH_QUEUE_SERIAL)
     private var network: FFNN!
-    private let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"
+    private let filePath = NSHomeDirectory() + "/Documents/test"
     @IBOutlet weak var joinButton: UIButton!
 //    @IBOutlet weak var same: UIButton!
     private var model : NSMutableDictionary = [:]
@@ -65,13 +65,13 @@ class ViewController: UIViewController {
             let keyname = snapshot.key
             self.model.setObject(snapshot.value as! Int, forKey: keyname)
         })
-        ref.child("request_recieved").observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
-            print(snapshot);
-            if (snapshot.value as! String == "true") {
-                self.network = FFNN(inputs: self.model.objectForKey("num_inputs") as! Int, hidden: 64, outputs: 10,
+        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
+            if (snapshot.key == "request_recieved" && snapshot.value as! String == "true") {
+                self.network = FFNN(inputs: self.model.objectForKey("num_inputs")!.integerValue, hidden: self.model.objectForKey("hidden_size")!.integerValue, outputs: self.model.objectForKey("num_outputs")!.integerValue,
                     learningRate: 0.7, momentum: 0.4, weights: nil,
                     activationFunction : .Sigmoid, errorFunction: .CrossEntropy(average: false))
                 self.startTraining()
+                print("SAME")
             }
         })
 //        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
@@ -79,7 +79,6 @@ class ViewController: UIViewController {
 //            self.snapshots.append(snapshot)
 //        })
 //        self.startTraining()
-        print("SAME")
     }
     
 
@@ -101,14 +100,7 @@ class ViewController: UIViewController {
             }
             print(self.network.hiddenWeights)
             print(self.network.outputWeights)
-            self.network.writeToFile("test")
-            var readString: String
-            do {
-                readString = try NSString(contentsOfFile: self.filePath, encoding: NSUTF8StringEncoding) as String
-                print(readString)
-            } catch let error as NSError {
-                print(error.description)
-            }
+            self.network.writeToFile("data")
         }
     }
 
