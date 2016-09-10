@@ -90,7 +90,8 @@ class RegistrationTableViewController: UITableViewController, UITextFieldDelegat
         self.city.delegate = self;
         self.state.delegate = self;
         self.zip.delegate = self
-        
+
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

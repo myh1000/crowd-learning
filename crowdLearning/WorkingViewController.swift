@@ -16,6 +16,7 @@ class WorkingViewController: UIViewController {
 
     @IBOutlet weak var workingLabel: UILabel!
     var counter = 0
+    var eyedee = Int()
     
     
     override func viewDidLoad() {
@@ -28,7 +29,7 @@ class WorkingViewController: UIViewController {
         
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.1 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
-            var myView:BAFluidView = BAFluidView(frame: self.view.frame, startElevation: 0.5)
+            let myView:BAFluidView = BAFluidView(frame: self.view.frame, startElevation: 0.5)
             
             myView.strokeColor = UIColor.whiteColor()
             myView.fillColor = UIColor(netHex: 0x23B9FF)
@@ -38,10 +39,8 @@ class WorkingViewController: UIViewController {
             self.containerView.hidden = false
             myView.startAnimation()
             self.view.insertSubview(myView, aboveSubview: self.view)
-            
+//            self.view.sendSubviewToBack(myView)
             self.view.bringSubviewToFront(self.workingLabel)
-            
-            
             
             UIView.animateWithDuration(0.5, animations: {
                 myView.alpha=1.0
@@ -50,10 +49,16 @@ class WorkingViewController: UIViewController {
                     self.containerView = myView
             })
         }
-        
+        print("numberid\(self.eyedee-1)")
+        ref.child("working_text\(Int(self.eyedee-1))").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            self.workingLabel.text = snapshot.value as? String
+        })
         ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
             if (snapshot.key == "request_recieved" && snapshot.value as! String == "false") {
                 self.performSegueWithIdentifier("unwindsmae", sender: self)
+            }
+            else if (snapshot.key == "working_tex\(Int(self.eyedee-1))t") {
+                self.workingLabel.text = snapshot.value as? String
             }
         })
     }
@@ -65,7 +70,7 @@ class WorkingViewController: UIViewController {
     
     func setUpBackground() {
         
-        var tempLayer: CAGradientLayer = CAGradientLayer()
+        let tempLayer: CAGradientLayer = CAGradientLayer()
         tempLayer.frame = self.view.bounds
         tempLayer.colors = [UIColor(netHex: 0xFAFF14).CGColor, UIColor(netHex: 0xFAFF14).CGColor, UIColor(netHex: 0xFAFF14).CGColor, UIColor(netHex: 0xFAFF14).CGColor]
         tempLayer.locations = [NSNumber(float: 0.0), NSNumber(float: 0.5), NSNumber(float: 0.8), NSNumber(float: 1.0)]

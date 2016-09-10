@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lcj-Jg-0xb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cuz-Iq-XRK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -171,8 +171,11 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv7-JD-UKR">
-                                <rect key="frame" x="242" y="462" width="116" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv7-JD-UKR">
+                                <rect key="frame" x="242" y="400" width="116" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xPC-uL-ljD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -181,11 +184,11 @@
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Rkq-zW-E9M" secondAttribute="trailing" id="1xG-Vo-NFb"/>
-                            <constraint firstItem="uv7-JD-UKR" firstAttribute="centerX" secondItem="JTM-dS-mZS" secondAttribute="centerX" id="Wku-dV-9O3"/>
+                            <constraint firstItem="uv7-JD-UKR" firstAttribute="centerX" secondItem="JTM-dS-mZS" secondAttribute="centerX" id="WcK-0o-3fw"/>
                             <constraint firstItem="Rkq-zW-E9M" firstAttribute="top" secondItem="JTM-dS-mZS" secondAttribute="top" id="ch2-XI-GMR"/>
                             <constraint firstItem="Rkq-zW-E9M" firstAttribute="leading" secondItem="JTM-dS-mZS" secondAttribute="leading" id="f5O-r2-phR"/>
-                            <constraint firstItem="uv7-JD-UKR" firstAttribute="centerY" secondItem="JTM-dS-mZS" secondAttribute="centerY" constant="180.5" id="gUe-xt-LTh"/>
                             <constraint firstItem="Lzr-zV-wMH" firstAttribute="top" secondItem="Rkq-zW-E9M" secondAttribute="bottom" id="gVl-pT-fAT"/>
+                            <constraint firstItem="uv7-JD-UKR" firstAttribute="centerY" secondItem="JTM-dS-mZS" secondAttribute="centerY" constant="150" id="h28-OX-5Xg"/>
                             <constraint firstItem="Q12-kA-llL" firstAttribute="centerX" secondItem="JTM-dS-mZS" secondAttribute="centerX" id="v6p-3x-fnY"/>
                             <constraint firstItem="Q12-kA-llL" firstAttribute="centerY" secondItem="JTM-dS-mZS" secondAttribute="centerY" constant="-215" id="yah-u6-Jlg"/>
                         </constraints>

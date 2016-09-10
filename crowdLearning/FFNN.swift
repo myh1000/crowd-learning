@@ -115,7 +115,7 @@ public final class FFNN {
     /// The most recent outputs from each of the hidden nodes.
     private var hiddenOutputCache: [Float]
     /// The most recent output from the network.
-    private var outputCache: [Float]
+    var outputCache: [Float]
     
     /// Temporary storage while calculating hidden errors, for use during backpropagation.
     private var hiddenErrorSumsCache: [Float]

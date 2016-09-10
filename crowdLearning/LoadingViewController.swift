@@ -27,7 +27,7 @@ class LoadingViewController: UIViewController {
 
         let ref = FIRDatabase.database().reference()
         ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
-            print("Child has changed")
+//            print("Child has changed")
 //            print(snapshot.key)
 //            print(snapshot.value)
             if (snapshot.key == "request_recieved" && snapshot.value as! String == "true") {
@@ -47,13 +47,16 @@ class LoadingViewController: UIViewController {
                 self.newoutput = true
             }
             self.weights.setValue(snapshot.value, forKey: snapshot.key)
+            ref.child("working_text\(Int(self.eyedee-1))").setValue("Recieved Weights")
+            print("recieve")
             if (self.newhidden && self.newoutput) {
                 self.newhidden = false
                 self.newoutput = false
                 
                 print("Starting Learning")
-                var newHiddenWeights : String = self.weights.valueForKey("newHiddenWeights") as! String
-                var newOutputWeights : String = self.weights.valueForKey("newOutputWeights") as! String
+                ref.child("working_text\(Int(self.eyedee-1))").setValue("Starting Learning")
+                let newHiddenWeights : String = self.weights.valueForKey("newHiddenWeights") as! String
+                let newOutputWeights : String = self.weights.valueForKey("newOutputWeights") as! String
                 print(newHiddenWeights)
                 let splitHidden = newHiddenWeights.characters.split{$0 == ","}.map(String.init)
                 let splitOutput = newOutputWeights.characters.split{$0 == ","}.map(String.init)
@@ -80,6 +83,10 @@ class LoadingViewController: UIViewController {
         })
     }
     
+    func sineFunc(x: Float) -> Float {
+        return (0.5 * sin(1.5 * x * Float(M_PI))) + 0.5
+    }
+
     func startTraining() {
         let ref = FIRDatabase.database().reference()
 
@@ -89,21 +96,47 @@ class LoadingViewController: UIViewController {
             if (self.weights.valueForKey("newHiddenWeightsArray") != nil) {
                 try! self.network.resetWithWeights(self.weights.valueForKey("newHiddenWeightsArray") as! [Float] + (self.weights.valueForKey("newOutputWeightsArray") as! [Float]))
             }
+            ref.child("working_text\(Int(self.eyedee-1))").setValue("Training...")
 //            print((self.weights.valueForKey("newHiddenWeights") as! [Float])[0])
-            while epoch < 100 {
+            
+            
+            
+            while epoch < 10 {
+                var answerArray = Array(count:1000, repeatedValue:[Float]())
+                var outputArray = Array(count:1000, repeatedValue:[Float]())
+                
                 for index in 0 ..< 1000 {
-                    let x = Float(index)
+                    let x = Float(index) / 2000.0
                     try! self.network.update(inputs: [x])
-                    let answer : Float = 3*x
+                    let answer = self.sineFunc(x)
+//                    let answer = 2*x
+                    answerArray[index] += [answer]
+                    outputArray[index] += self.network.outputCache
+//                    answerArray.addObject([answer]);
+//                    outputArray.addObject([self.network.outputCache])
                     try! self.network.backpropagate(answer: [answer])
                 }
                 epoch += 1
+                if (epoch % 25 == 0) {
+//                    print(answerArray)
+//                    print("kk")
+//                    print(outputArray)
+                }
+//                print(try! self.network.error(outputArray, expected: answerArray))
+                var total = Float(0.0)
+                for i in 0 ..< 1000
+                {
+                    total += powf(Float(outputArray[i][0] - answerArray[i][0]),Float(2.0))
+                }
+                ref.child("accuracy").setValue(total);
+
             }
             
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(5 * Double(NSEC_PER_SEC)))
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(Float(Float(arc4random()) / Float(UINT32_MAX)) * Float(NSEC_PER_SEC)))
             dispatch_after(delayTime, dispatch_get_main_queue()) {
                 ref.child("status\(Int(self.eyedee-1))").setValue("recieveFromClient");
                 print("trying to set firebase")
+                ref.child("working_text\(Int(self.eyedee-1))").setValue("Averaging Weights")
                 ref.child("weights").setValue(["hiddenWeights":self.network.hiddenWeights.description, "outputWeights":self.network.outputWeights.description])
             }
 //            self.network.writeToFile("data")
@@ -120,14 +153,15 @@ class LoadingViewController: UIViewController {
     @IBAction func unwindone(segue: UIStoryboardSegue) {
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "done" {
+            if let destinationVC = segue.destinationViewController as? WorkingViewController {
+                destinationVC.eyedee = self.eyedee
+            }
+        }
     }
-    */
 
 }
