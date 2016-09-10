@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import FirebaseDatabase
+//import FirebaseDatabase
 
 class ViewController: UIViewController {
 
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var joinButton: UIButton!
 //    @IBOutlet weak var same: UIButton!
     private var model : NSMutableDictionary = [:]
-    private let ref = FIRDatabase.database().reference()
+    private var ref = FIRDatabaseReference()
     var postDict: AnyObject?
 
     @IBAction func join(sender: AnyObject) {
@@ -48,13 +48,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = FIRDatabase.database().reference()
         joinButton.layer.cornerRadius = 5;
         // Do any additional setup after loading the view, typically from a nib.
         
         ref.child("model_structure").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             self.model.setObject(snapshot.value!["hidden_size"] as! String, forKey: "hidden_size")
             self.model.setObject(snapshot.value!["num_inputs"] as! String, forKey: "num_inputs")
-            self.model.setObject(snapshot.value!["num_layers"] as! String, forKey: "num_layers")
+            self.model.setObject(snapshot.value!["learning_rate"] as! String, forKey: "learning_rate")
             self.model.setObject(snapshot.value!["num_outputs"] as! String, forKey: "num_outputs")
         }) { (error) in
             print(error.localizedDescription)
@@ -98,11 +99,8 @@ class ViewController: UIViewController {
             }
             print(self.network.hiddenWeights)
             print(self.network.outputWeights)
-<<<<<<< HEAD
             self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
             self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
-=======
->>>>>>> same
             self.network.writeToFile("data")
         }
     }
