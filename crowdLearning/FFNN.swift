@@ -13,7 +13,6 @@ import Accelerate
 import Foundation
 
 
-
 /// An enum containing all errors that may be thrown by FFNN.
 public enum FFNNError: ErrorType {
     case InvalidInputsError(String)
@@ -411,7 +410,6 @@ public extension FFNN {
         storage["activationFunction"] = self.activationFunction.rawValue
         
         let data: NSData = NSKeyedArchiver.archivedDataWithRootObject(storage)
-        print(url);
         data.writeToURL(url, atomically: true)
     }
     

@@ -29,7 +29,6 @@ extension FFNN: Storage {
     /// Writes the FFNN to file.
     /// - Parameter filename: The name of the file to write to. This file will be written to the default Documents directory.
     public func writeToFile(filename: String) {
-        print("HI");
         self.write(FFNN.getFileURL(filename))
     }
 
