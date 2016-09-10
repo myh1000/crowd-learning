@@ -59,7 +59,7 @@ class LoadingViewController: UIViewController {
             //            print(self.network.outputWeights)
             print("Asdfasdfasdf \(self.eyedee)");
             
-            ref.child("status\(Int(self.eyedee-1))").setValue("revieve");
+            ref.child("status\(Int(self.eyedee-1))").setValue("recieveFromClient");
             
             ref.child("weights").setValue(["hiddenWeights":self.network.hiddenWeights.description, "outputWeights":self.network.outputWeights.description])
             self.network.writeToFile("data")

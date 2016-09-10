@@ -9,6 +9,9 @@ target 'crowdLearning' do
   pod 'Firebase', '>= 2.5.1'
   pod 'Firebase/Database'
   pod 'BAFluidView'
+  pod 'IQKeyboardManagerSwift'
+  
+
   target 'crowdLearningTests' do
     inherit! :search_paths
     # Pods for testing

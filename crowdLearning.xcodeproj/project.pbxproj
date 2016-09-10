@@ -27,6 +27,7 @@
 		0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA81D83E0BB00350615 /* LoadingView.swift */; };
 		0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */; };
 		0A8D5BAD1D83E3F400350615 /* WorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */; };
+		0AA2ACCF1D84474600EDBC78 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2ACCE1D84474600EDBC78 /* RegistrationTableViewController.swift */; };
 		B9F7DB5A0DD9812B92A3B528 /* Pods_crowdLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91F098251A8D46E14170DED /* Pods_crowdLearningTests.framework */; };
 		CF37E1417D3D990EA1E53ED0 /* Pods_crowdLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7865D68E0F9FC6A624742BB4 /* Pods_crowdLearning.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		0A8D5BA81D83E0BB00350615 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingViewController.swift; sourceTree = "<group>"; };
+		0AA2ACCE1D84474600EDBC78 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 		301EB15544ED5EB041C089BD /* Pods-crowdLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		3A95CE3F4308F02B69B7E5A9 /* Pods-crowdLearningTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearningTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BC89BC496BB0231F9D2872D /* Pods-crowdLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				00B2E4711D83E7C5000AF88A /* SwiftAI */,
 				00A44CDE1D839791002FEC2E /* ViewController.swift */,
 				0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */,
+				0AA2ACCE1D84474600EDBC78 /* RegistrationTableViewController.swift */,
 				00A44CE01D839791002FEC2E /* Main.storyboard */,
 				0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */,
 				0A8D5BA81D83E0BB00350615 /* LoadingView.swift */,
@@ -389,6 +392,7 @@
 				00A44CDF1D839791002FEC2E /* ViewController.swift in Sources */,
 				0A8D5BAD1D83E3F400350615 /* WorkingViewController.swift in Sources */,
 				00B2E47F1D83E7FF000AF88A /* README.md in Sources */,
+				0AA2ACCF1D84474600EDBC78 /* RegistrationTableViewController.swift in Sources */,
 				00B2E47B1D83E7FF000AF88A /* FFNN+Storage.swift in Sources */,
 				00B2E47A1D83E7FF000AF88A /* FFNN.swift in Sources */,
 				00A44CDD1D839791002FEC2E /* AppDelegate.swift in Sources */,
