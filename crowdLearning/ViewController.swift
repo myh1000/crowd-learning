@@ -39,24 +39,29 @@ class ViewController: UIViewController {
         }
         ref.child("model_structure").observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
             let keyname = snapshot.key
-//            self.model.setObject(snapshot.value as! String, forKey: keyname)
+            self.model.setObject(snapshot.value as! Int, forKey: keyname)
         })
         ref.child("request_recieved").observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
             print(snapshot);
-//            self.startTraining()
+            if (snapshot.value as! String == "true") {
+                self.network = FFNN(inputs: self.model.objectForKey("num_inputs") as! Int, hidden: 64, outputs: 10,
+                    learningRate: 0.7, momentum: 0.4, weights: nil,
+                    activationFunction : .Sigmoid, errorFunction: .CrossEntropy(average: false))
+                self.startTraining()
+            }
         })
 //        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
 //            let index = self.snapshots.indexOf(snapshot)
 //            self.snapshots.append(snapshot)
 //        })
-        network = FFNN(inputs: 100, hidden: 64, outputs: 10,
-                   learningRate: 0.7, momentum: 0.4, weights: nil,
-                   activationFunction : .Sigmoid, errorFunction: .CrossEntropy(average: false))
 //        self.startTraining()
         print("SAME")
     }
     
 
+    @IBAction func same(sender: AnyObject) {
+        print(model)
+    }
     func startTraining() {
         // Dispatches training process to background thread
         dispatch_async(self.networkQueue) {
