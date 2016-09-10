@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class ViewController: UIViewController {
 
@@ -23,6 +24,27 @@ class ViewController: UIViewController {
     private let ref = FIRDatabase.database().reference()
     var postDict: AnyObject?
 
+    @IBAction func join(sender: AnyObject) {
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://47ebd870.ngrok.io/servant_connect")!)
+        
+        request.HTTPMethod = "POST"
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200
+            {
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            let responseString = String(data: data!, encoding: NSUTF8StringEncoding)
+            print("responseString = \(responseString)")
+        }
+        task.resume()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,9 +80,6 @@ class ViewController: UIViewController {
     }
     
 
-    @IBAction func same(sender: AnyObject) {
-        print(model)
-    }
     func startTraining() {
         // Dispatches training process to background thread
         dispatch_async(self.networkQueue) {
@@ -79,13 +98,16 @@ class ViewController: UIViewController {
             }
             print(self.network.hiddenWeights)
             print(self.network.outputWeights)
+<<<<<<< HEAD
             self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
             self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
+=======
+>>>>>>> same
             self.network.writeToFile("data")
         }
     }
 
-
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
