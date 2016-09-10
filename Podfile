@@ -10,7 +10,7 @@ target 'crowdLearning' do
   pod 'Firebase/Database'
   pod 'BAFluidView'
   pod 'IQKeyboardManagerSwift'
-  
+  pod 'SCLAlertView', '~> 0.6'
 
   target 'crowdLearningTests' do
     inherit! :search_paths
