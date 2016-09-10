@@ -22,6 +22,8 @@
 		00B2E4801D83E7FF000AF88A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2E4781D83E7FF000AF88A /* Storage.swift */; };
 		00B2E4811D83E7FF000AF88A /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2E4791D83E7FF000AF88A /* Vector.swift */; };
 		00B2E4831D83EB1C000AF88A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E4821D83EB1C000AF88A /* GoogleService-Info.plist */; };
+		0A34820F1D83EEEC0089584B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A34820E1D83EEEC0089584B /* CoreGraphics.framework */; };
+		0A3482111D83EFAA0089584B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3482101D83EFAA0089584B /* Foundation.framework */; };
 		0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA61D83DEE200350615 /* landingViewController.swift */; };
 		0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA81D83E0BB00350615 /* LoadingView.swift */; };
 		0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */; };
@@ -60,6 +62,9 @@
 		00B2E4781D83E7FF000AF88A /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		00B2E4791D83E7FF000AF88A /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		00B2E4821D83EB1C000AF88A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A34820A1D83EE390089584B /* crowdLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crowdLearning-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A34820E1D83EEEC0089584B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A3482101D83EFAA0089584B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A8D5BA61D83DEE200350615 /* landingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
 		0A8D5BA81D83E0BB00350615 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3482111D83EFAA0089584B /* Foundation.framework in Frameworks */,
+				0A34820F1D83EEEC0089584B /* CoreGraphics.framework in Frameworks */,
 				CF37E1417D3D990EA1E53ED0 /* Pods_crowdLearning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +134,7 @@
 				00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */,
 				00A44CE81D839791002FEC2E /* Info.plist */,
 				00B2E4821D83EB1C000AF88A /* GoogleService-Info.plist */,
+				0A34820A1D83EE390089584B /* crowdLearning-Bridging-Header.h */,
 			);
 			path = crowdLearning;
 			sourceTree = "<group>";
@@ -169,6 +177,8 @@
 		BF3B36A73A3E4D46F45E22E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A3482101D83EFAA0089584B /* Foundation.framework */,
+				0A34820E1D83EEEC0089584B /* CoreGraphics.framework */,
 				7865D68E0F9FC6A624742BB4 /* Pods_crowdLearning.framework */,
 				F91F098251A8D46E14170DED /* Pods_crowdLearningTests.framework */,
 			);
@@ -182,12 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00A44CF61D839791002FEC2E /* Build configuration list for PBXNativeTarget "crowdLearning" */;
 			buildPhases = (
-				2759923F25059F785A942F4E /* 📦 Check Pods Manifest.lock */,
+				2759923F25059F785A942F4E /* [CP] Check Pods Manifest.lock */,
 				00A44CD51D839791002FEC2E /* Sources */,
 				00A44CD61D839791002FEC2E /* Frameworks */,
 				00A44CD71D839791002FEC2E /* Resources */,
-				378D53FBCD779B55AA857ACB /* 📦 Embed Pods Frameworks */,
-				02D316BD3E824C0B3C872103 /* 📦 Copy Pods Resources */,
+				378D53FBCD779B55AA857ACB /* [CP] Embed Pods Frameworks */,
+				02D316BD3E824C0B3C872103 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,12 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00A44CF91D839791002FEC2E /* Build configuration list for PBXNativeTarget "crowdLearningTests" */;
 			buildPhases = (
-				10A7C275C089BC28CAB4705A /* 📦 Check Pods Manifest.lock */,
+				10A7C275C089BC28CAB4705A /* [CP] Check Pods Manifest.lock */,
 				00A44CE91D839791002FEC2E /* Sources */,
 				00A44CEA1D839791002FEC2E /* Frameworks */,
 				00A44CEB1D839791002FEC2E /* Resources */,
-				BE8691BDEC4F3D8CD5740590 /* 📦 Embed Pods Frameworks */,
-				929E508305A6657E1F0453A6 /* 📦 Copy Pods Resources */,
+				BE8691BDEC4F3D8CD5740590 /* [CP] Embed Pods Frameworks */,
+				929E508305A6657E1F0453A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,14 +289,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02D316BD3E824C0B3C872103 /* 📦 Copy Pods Resources */ = {
+		02D316BD3E824C0B3C872103 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,14 +304,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		10A7C275C089BC28CAB4705A /* 📦 Check Pods Manifest.lock */ = {
+		10A7C275C089BC28CAB4705A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,14 +319,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2759923F25059F785A942F4E /* 📦 Check Pods Manifest.lock */ = {
+		2759923F25059F785A942F4E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,14 +334,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		378D53FBCD779B55AA857ACB /* 📦 Embed Pods Frameworks */ = {
+		378D53FBCD779B55AA857ACB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,14 +349,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		929E508305A6657E1F0453A6 /* 📦 Copy Pods Resources */ = {
+		929E508305A6657E1F0453A6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,14 +364,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE8691BDEC4F3D8CD5740590 /* 📦 Embed Pods Frameworks */ = {
+		BE8691BDEC4F3D8CD5740590 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,10 +529,27 @@
 			baseConfigurationReference = 301EB15544ED5EB041C089BD /* Pods-crowdLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/BuildHeaders\"\n${POD_ROOT}/BuildHeaders",
+				);
 				INFOPLIST_FILE = crowdLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myh1000.crowdLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "crowdLearning/crowdLearning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -531,10 +558,26 @@
 			baseConfigurationReference = 5BC89BC496BB0231F9D2872D /* Pods-crowdLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/BuildHeaders\"\n${POD_ROOT}/BuildHeaders",
+				);
 				INFOPLIST_FILE = crowdLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myh1000.crowdLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "crowdLearning/crowdLearning-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -1,4 +1,5 @@
 PODS:
+  - BAFluidView (0.2.3)
   - Firebase (3.3.0):
     - Firebase/Core (= 3.3.0)
   - Firebase/Analytics (3.3.0):
@@ -23,10 +24,12 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
+  - BAFluidView
   - Firebase (>= 2.5.1)
   - Firebase/Database
 
 SPEC CHECKSUMS:
+  BAFluidView: 5d84ef109831b97740f75b6d785e51f13fa08398
   Firebase: 6250071f0e2440a5c4c67b8cb6b868f868237ac3
   FirebaseAnalytics: 0fd6532cb2c3d03cd5cf26ad295ccb091efd3104
   FirebaseDatabase: 59bea2e7dfd81b3b8b2f8e396caf1a52c2ced6f7
@@ -35,6 +38,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: 9da76c7104cdd6a6c2cd3e4232d35c798967a241
+PODFILE CHECKSUM: 6fda463946dcd3f0977b01dc09c219c5c666b77a
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

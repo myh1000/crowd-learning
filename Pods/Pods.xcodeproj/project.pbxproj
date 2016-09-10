@@ -7,29 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11CC5A486EBF144A8C185136D1467C47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		163BDB816B4E48E66B3012E41127F31A /* Pods-crowdLearning-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AAE3D6A481EB943D70B5B087A3697B /* Pods-crowdLearning-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E9DF48A14DC2B9EA5B53A2FCF33BF41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		2692C852C0FAED686CB39F2F2445D29C /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAEF3A22F013A28C50E518FA5B30B0D /* BAFluidView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D93BFA783AC51FC2B428613DB3FE9C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		4008D08BF45E74608C4F66F15A560363 /* BAFluidView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E75158D1B5F12BB0A7C7B3B4A85B0 /* BAFluidView-dummy.m */; };
+		43751A3C0316E006243DFA4176181E95 /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 750A11792099121778D466D43E77746A /* UIColor+ColorWithHex.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C4404DD5F2F8C5E6161AC302EA60CEC /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 193451F5683F41D5A30FE5AD5E8B6F89 /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53DE50260692A6D3E2CC70FD6F378ED7 /* Pods-crowdLearningTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D970D91BD08562103F00FD1A2B2903 /* Pods-crowdLearningTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CE2F628183AC4287732E2F64E04A6E0 /* Pods-crowdLearning-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AAE3D6A481EB943D70B5B087A3697B /* Pods-crowdLearning-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D38DAA56FB17D788293401C9FEBD44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A859F0050E584F796B40F52BF9AAB029 /* Pods-crowdLearning-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1D4D6BA98D54CAD0422ED6C72670E0 /* Pods-crowdLearning-dummy.m */; };
+		BED9B49DD5FFC3CA6128A05F90DFC8E3 /* BAFluidView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDB34FE14C825499E68D4DAC620EC6D /* BAFluidView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E16AC59AABC4FF37CF07B815AC3A878D /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 565A67BD513E62FBC849AFA7CFDB6475 /* BAFluidView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E1BB0DCA064A2BEDDFC4322FFEDBEF16 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC6A7C4317D64D0CBF709F37EC7A787 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1BED5D68E7135ECD8524ED4F6834A76 /* Pods-crowdLearningTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F22B51DF05B3B47B452ADC5C2C6D8C /* Pods-crowdLearningTests-dummy.m */; };
-		E5EAA18A7F164887A448A61D00A700F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		F425FB0382A222BE024BE6582C78A203 /* Pods-crowdLearning-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1D4D6BA98D54CAD0422ED6C72670E0 /* Pods-crowdLearning-dummy.m */; };
+		E5EAA18A7F164887A448A61D00A700F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E82037BD964306C416CAD17CE5C63AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA96E1C8B668A4AA298CA4753042E43B;
+			remoteInfo = BAFluidView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		11C3A60F0EDAA8AA6F03D1DD9519B6EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C707A21F3FE14B9A3454A57378995A /* BAFluidView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BAFluidView.modulemap; sourceTree = "<group>"; };
 		12C4A9AAD5CF38CFBF0E16896447F95D /* Pods-crowdLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-crowdLearning.debug.xcconfig"; sourceTree = "<group>"; };
-		173BE3D5E7FD6884B2A5AF3236974771 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		193451F5683F41D5A30FE5AD5E8B6F89 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
+		1ACFE19FE22DEA26FF39D606C033F491 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		24EE0F98B327C9B3D9A5287559FDBDC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298B03DEC71C91C9513A1909DEC924D4 /* BAFluidView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BAFluidView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7F0CC99ECB22670D368DC5B00BCEA4 /* Pods-crowdLearningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-crowdLearningTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E5E75158D1B5F12BB0A7C7B3B4A85B0 /* BAFluidView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAFluidView-dummy.m"; sourceTree = "<group>"; };
 		3777311D9E067254585EA5509125C621 /* Pods-crowdLearning-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-crowdLearning-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3AB652230148DA5FD60EF4E548CD020D /* Pods-crowdLearningTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-crowdLearningTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		422AA170D2F4E9AC0383166561663D9E /* Pods_crowdLearningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowdLearningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42671AF6EB5403E1A9D06BCD10EB3B15 /* BAFluidView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAFluidView.xcconfig; sourceTree = "<group>"; };
+		442556EFEA9F3CB9E18E5FDD39025D93 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		530ABE05CF7F95FD639258AF4E034A69 /* Pods-crowdLearningTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-crowdLearningTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		565A67BD513E62FBC849AFA7CFDB6475 /* BAFluidView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = Pod/Classes/BAFluidView.m; sourceTree = "<group>"; };
+		5BC6A7C4317D64D0CBF709F37EC7A787 /* Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Pod/Classes/Constants.h; sourceTree = "<group>"; };
+		5D8B484B34F1ECCB2925A83001A9928C /* Pods_crowdLearningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowdLearningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A1FE5F1297216536E49AB39F8A19C7 /* Pods-crowdLearning-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-crowdLearning-acknowledgements.plist"; sourceTree = "<group>"; };
 		68AAE3D6A481EB943D70B5B087A3697B /* Pods-crowdLearning-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-crowdLearning-umbrella.h"; sourceTree = "<group>"; };
+		73EF4B017ABD07E7FF884FCD79C21237 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		750A11792099121778D466D43E77746A /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
 		794F9633B2B55090318CA2A40D22DA81 /* Pods-crowdLearning-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-crowdLearning-frameworks.sh"; sourceTree = "<group>"; };
-		7BDBAD55E1A2761466841D5CE7EB5F11 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		7CD199F8B6D25F7B50DD7470ABA5A831 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		8814A8905100328185252BA4DC050459 /* Pods_crowdLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowdLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853B2564963E2065164533FFFE1B9D7C /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		880C0979CEA8EF9163171B3340BB420E /* Pods_crowdLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowdLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B35707D0D21DBF9B88592D255683ADC /* Pods-crowdLearningTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-crowdLearningTests.modulemap"; sourceTree = "<group>"; };
 		8C8296CF30C71BED4104CBB0FEA24EB7 /* Pods-crowdLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-crowdLearning.release.xcconfig"; sourceTree = "<group>"; };
 		8CBEE2A8B8F21A2CEE01367E7CFEC5D7 /* Pods-crowdLearningTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-crowdLearningTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,20 +66,31 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94151ABA6522BA4F9A862341FEC2126B /* Pods-crowdLearningTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-crowdLearningTests-frameworks.sh"; sourceTree = "<group>"; };
 		9BDFF518630F55A9FFD252F52091EE3E /* Pods-crowdLearning.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-crowdLearning.modulemap"; sourceTree = "<group>"; };
-		9EC2A979829F26A198D3459B48C5996B /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		A1BC3B97D4EF7A5D1268BE6DD6A943D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5741189EF84E5DE25E60A0E56BCF13F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A8D970D91BD08562103F00FD1A2B2903 /* Pods-crowdLearningTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-crowdLearningTests-umbrella.h"; sourceTree = "<group>"; };
-		B20CBCA1505CBB0552A608007AD23A99 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		BA0EC3D4D3CBB5452712907B4C963593 /* Pods-crowdLearningTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-crowdLearningTests-resources.sh"; sourceTree = "<group>"; };
-		C3AA50E3FDE7B324B387837899C4C477 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D827FABFB248142840BCA00033329D89 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		BFAEF3A22F013A28C50E518FA5B30B0D /* BAFluidView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Pod/Classes/BAFluidView.h; sourceTree = "<group>"; };
+		C14164142DD79274B2FF791A972F216B /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		CDE54414DC15C3B225A9B946B579176C /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		D470D26D24FAB5A26E5B21B2625F2F45 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		D8394DFF2D0C92BE34D0883DCF2E67C7 /* Pods-crowdLearning-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-crowdLearning-resources.sh"; sourceTree = "<group>"; };
+		DA907140861AEA794668072FAD5D9FEE /* BAFluidView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-prefix.pch"; sourceTree = "<group>"; };
+		E64D3704DB085E26D96563200451A8E5 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3F22B51DF05B3B47B452ADC5C2C6D8C /* Pods-crowdLearningTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-crowdLearningTests-dummy.m"; sourceTree = "<group>"; };
+		FFDB34FE14C825499E68D4DAC620EC6D /* BAFluidView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		372AD2A67B8ADC85FB8999ACCBB9BF05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CC5A486EBF144A8C185136D1467C47 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EBAAEB621BA12C60C666E6296D57E67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,11 +99,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD2493BCBA9F289486BB870594E8380D /* Frameworks */ = {
+		B741F364DAC28BA7928AF71AFAFA32AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D38DAA56FB17D788293401C9FEBD44F /* Foundation.framework in Frameworks */,
+				1E9DF48A14DC2B9EA5B53A2FCF33BF41 /* Foundation.framework in Frameworks */,
+				3D93BFA783AC51FC2B428613DB3FE9C3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +129,14 @@
 			path = "Target Support Files/Pods-crowdLearningTests";
 			sourceTree = "<group>";
 		};
+		068889CBD57BF57EC4795B1B4926AFC3 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				C14164142DD79274B2FF791A972F216B /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
 		089DCEC5D404295AA7598F54ED72BBE0 /* Pods-crowdLearning */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,102 +155,94 @@
 			path = "Target Support Files/Pods-crowdLearning";
 			sourceTree = "<group>";
 		};
-		17F44D02479172F82D13993E1D3145FA /* FirebaseAnalytics */ = {
+		0F3BE5292105B343637ADC395878AFDB /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				EE171FCA9129C563D5DD74910A51F38F /* Frameworks */,
+				45BC654DBBAF5757CD3EA127D4E871A7 /* Frameworks */,
 			);
-			path = FirebaseAnalytics;
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		3715C1FD65FC43924AEE615C9BA949B5 /* Firebase */ = {
+		16FE015C28559A9F22D1578CEC68E510 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81C9A50E942732A55AAB07567D987531 /* Analytics */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		4A97192267D00D27B6965F755BFF626A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7BDBAD55E1A2761466841D5CE7EB5F11 /* FirebaseInstanceID.framework */,
+				853B2564963E2065164533FFFE1B9D7C /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		53B766708A83BA1A9712BB209BA238E3 /* Pods */ = {
+		2D6B57AFC03EC6CF070C6E0AFFFFD0A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3715C1FD65FC43924AEE615C9BA949B5 /* Firebase */,
-				17F44D02479172F82D13993E1D3145FA /* FirebaseAnalytics */,
-				A0312E391FAD27C57573DF24E02718A2 /* FirebaseDatabase */,
-				77A51F94615C587721C6F577BCB4E6E3 /* FirebaseInstanceID */,
-				80EEC67F754484ADF268A0844CB4211B /* GoogleInterchangeUtilities */,
-				B5741D6B1D1895BF37B98C326875D222 /* GoogleSymbolUtilities */,
-				7B45E2FBFA12606E601C184142189D7F /* GoogleUtilities */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5B744589EB306B5B04C2178D4790756A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9EC2A979829F26A198D3459B48C5996B /* GoogleInterchangeUtilities.framework */,
+				CDE54414DC15C3B225A9B946B579176C /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		77A51F94615C587721C6F577BCB4E6E3 /* FirebaseInstanceID */ = {
+		33163CA2EA2D329944719CEF040D6236 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D827FABFB248142840BCA00033329D89 /* FIRInstanceID.h */,
-				4A97192267D00D27B6965F755BFF626A /* Frameworks */,
+				D470D26D24FAB5A26E5B21B2625F2F45 /* GoogleSymbolUtilities.framework */,
 			);
-			path = FirebaseInstanceID;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B45E2FBFA12606E601C184142189D7F /* GoogleUtilities */ = {
+		3F09E26EC4B184B2FA272D9ED261DC4D /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				90078067A3170139DC228D6ABFD06366 /* Frameworks */,
+				CE7F955CDB5F4A8722923F69E7D641D8 /* Frameworks */,
 			);
 			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45BC654DBBAF5757CD3EA127D4E871A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				442556EFEA9F3CB9E18E5FDD39025D93 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B2F312EB32AB8A4F047251FA2BD0420 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				068889CBD57BF57EC4795B1B4926AFC3 /* Analytics */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				53B766708A83BA1A9712BB209BA238E3 /* Pods */,
-				CE3B96A674ACC6FFC5F409F4D45ADBED /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				81169C0207E8B10BA23B653E5F7214C5 /* Pods */,
+				DEFE4B87ADF3D00798BF8E93CA21FE8E /* Products */,
 				82C8CF4107C266CA09F8FC5B33DFFDAA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		80EEC67F754484ADF268A0844CB4211B /* GoogleInterchangeUtilities */ = {
+		81169C0207E8B10BA23B653E5F7214C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B744589EB306B5B04C2178D4790756A /* Frameworks */,
+				D9E37AFC30E7D1B38852333FDCE5BB9E /* BAFluidView */,
+				4B2F312EB32AB8A4F047251FA2BD0420 /* Firebase */,
+				C542F88349013F327E890993C30AEC75 /* FirebaseAnalytics */,
+				CD9A042C33F9DAC3048C8ADCA21FF4BA /* FirebaseDatabase */,
+				F0496145F83E7421BABF73B73BE58DE5 /* FirebaseInstanceID */,
+				0F3BE5292105B343637ADC395878AFDB /* GoogleInterchangeUtilities */,
+				C72172D8F6647182FC73DF30E1318423 /* GoogleSymbolUtilities */,
+				3F09E26EC4B184B2FA272D9ED261DC4D /* GoogleUtilities */,
 			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		81C9A50E942732A55AAB07567D987531 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				C3AA50E3FDE7B324B387837899C4C477 /* Firebase.h */,
-			);
-			name = Analytics;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		82C8CF4107C266CA09F8FC5B33DFFDAA /* Targets Support Files */ = {
@@ -213,69 +254,99 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		90078067A3170139DC228D6ABFD06366 /* Frameworks */ = {
+		BCE9FC62A02A295AD644BF80CD85EBCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5741189EF84E5DE25E60A0E56BCF13F /* GoogleUtilities.framework */,
+				E64D3704DB085E26D96563200451A8E5 /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		949B9CD97B7207991D0232819128CB8F /* Frameworks */ = {
+		C542F88349013F327E890993C30AEC75 /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				173BE3D5E7FD6884B2A5AF3236974771 /* GoogleSymbolUtilities.framework */,
+				BCE9FC62A02A295AD644BF80CD85EBCF /* Frameworks */,
 			);
-			name = Frameworks;
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		A0312E391FAD27C57573DF24E02718A2 /* FirebaseDatabase */ = {
+		C72172D8F6647182FC73DF30E1318423 /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				CA0FCDCAC546F682AE5C60F5E9C42055 /* Frameworks */,
-			);
-			path = FirebaseDatabase;
-			sourceTree = "<group>";
-		};
-		B5741D6B1D1895BF37B98C326875D222 /* GoogleSymbolUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				949B9CD97B7207991D0232819128CB8F /* Frameworks */,
+				33163CA2EA2D329944719CEF040D6236 /* Frameworks */,
 			);
 			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		CBF025D61E587C7A5C8D9B40AEB250F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				11C707A21F3FE14B9A3454A57378995A /* BAFluidView.modulemap */,
+				42671AF6EB5403E1A9D06BCD10EB3B15 /* BAFluidView.xcconfig */,
+				2E5E75158D1B5F12BB0A7C7B3B4A85B0 /* BAFluidView-dummy.m */,
+				DA907140861AEA794668072FAD5D9FEE /* BAFluidView-prefix.pch */,
+				FFDB34FE14C825499E68D4DAC620EC6D /* BAFluidView-umbrella.h */,
+				24EE0F98B327C9B3D9A5287559FDBDC8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BAFluidView";
+			sourceTree = "<group>";
+		};
+		CD9A042C33F9DAC3048C8ADCA21FF4BA /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				2D6B57AFC03EC6CF070C6E0AFFFFD0A5 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		CE7F955CDB5F4A8722923F69E7D641D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ACFE19FE22DEA26FF39D606C033F491 /* GoogleUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CA0FCDCAC546F682AE5C60F5E9C42055 /* Frameworks */ = {
+		D9E37AFC30E7D1B38852333FDCE5BB9E /* BAFluidView */ = {
 			isa = PBXGroup;
 			children = (
-				B20CBCA1505CBB0552A608007AD23A99 /* FirebaseDatabase.framework */,
+				BFAEF3A22F013A28C50E518FA5B30B0D /* BAFluidView.h */,
+				565A67BD513E62FBC849AFA7CFDB6475 /* BAFluidView.m */,
+				5BC6A7C4317D64D0CBF709F37EC7A787 /* Constants.h */,
+				193451F5683F41D5A30FE5AD5E8B6F89 /* UIColor+ColorWithHex.h */,
+				750A11792099121778D466D43E77746A /* UIColor+ColorWithHex.m */,
+				CBF025D61E587C7A5C8D9B40AEB250F2 /* Support Files */,
 			);
-			name = Frameworks;
+			path = BAFluidView;
 			sourceTree = "<group>";
 		};
-		CE3B96A674ACC6FFC5F409F4D45ADBED /* Products */ = {
+		DEFE4B87ADF3D00798BF8E93CA21FE8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8814A8905100328185252BA4DC050459 /* Pods_crowdLearning.framework */,
-				422AA170D2F4E9AC0383166561663D9E /* Pods_crowdLearningTests.framework */,
+				298B03DEC71C91C9513A1909DEC924D4 /* BAFluidView.framework */,
+				880C0979CEA8EF9163171B3340BB420E /* Pods_crowdLearning.framework */,
+				5D8B484B34F1ECCB2925A83001A9928C /* Pods_crowdLearningTests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE171FCA9129C563D5DD74910A51F38F /* Frameworks */ = {
+		F0496145F83E7421BABF73B73BE58DE5 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				7CD199F8B6D25F7B50DD7470ABA5A831 /* FirebaseAnalytics.framework */,
+				73EF4B017ABD07E7FF884FCD79C21237 /* FIRInstanceID.h */,
+				16FE015C28559A9F22D1578CEC68E510 /* Frameworks */,
 			);
-			name = Frameworks;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,11 +360,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC56D9234F0AFF1ECCBD752C16A4CB92 /* Headers */ = {
+		57B3630A213CCF2E1915000132EFBBB9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE2F628183AC4287732E2F64E04A6E0 /* Pods-crowdLearning-umbrella.h in Headers */,
+				BED9B49DD5FFC3CA6128A05F90DFC8E3 /* BAFluidView-umbrella.h in Headers */,
+				2692C852C0FAED686CB39F2F2445D29C /* BAFluidView.h in Headers */,
+				E1BB0DCA064A2BEDDFC4322FFEDBEF16 /* Constants.h in Headers */,
+				4C4404DD5F2F8C5E6161AC302EA60CEC /* UIColor+ColorWithHex.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B45219F7D3A68C71BD362FDA15DCF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163BDB816B4E48E66B3012E41127F31A /* Pods-crowdLearning-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,24 +396,42 @@
 			);
 			name = "Pods-crowdLearningTests";
 			productName = "Pods-crowdLearningTests";
-			productReference = 422AA170D2F4E9AC0383166561663D9E /* Pods_crowdLearningTests.framework */;
+			productReference = 5D8B484B34F1ECCB2925A83001A9928C /* Pods_crowdLearningTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		95F156219327818DED0D06C06562E390 /* Pods-crowdLearning */ = {
+		9761F65AF9A0F457CF0C8FCA806E9F71 /* Pods-crowdLearning */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E76825CB84C5DA545F2871D85FE51B7 /* Build configuration list for PBXNativeTarget "Pods-crowdLearning" */;
+			buildConfigurationList = 2EDC614525166725DAC395FEFD035664 /* Build configuration list for PBXNativeTarget "Pods-crowdLearning" */;
 			buildPhases = (
-				AE41E2DD9CF9FC9C2DF5AD92D02B31AD /* Sources */,
-				DD2493BCBA9F289486BB870594E8380D /* Frameworks */,
-				DC56D9234F0AFF1ECCBD752C16A4CB92 /* Headers */,
+				848B8B88AA3C8E12EF5F0B5685591C76 /* Sources */,
+				372AD2A67B8ADC85FB8999ACCBB9BF05 /* Frameworks */,
+				A4B45219F7D3A68C71BD362FDA15DCF0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67DBF2A7BBADC1942621BE34F98C020 /* PBXTargetDependency */,
+			);
+			name = "Pods-crowdLearning";
+			productName = "Pods-crowdLearning";
+			productReference = 880C0979CEA8EF9163171B3340BB420E /* Pods_crowdLearning.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA96E1C8B668A4AA298CA4753042E43B /* BAFluidView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAD9DF96E5C05EF22302DFE793A4735 /* Build configuration list for PBXNativeTarget "BAFluidView" */;
+			buildPhases = (
+				AF818696F7C611151662362C151157E1 /* Sources */,
+				B741F364DAC28BA7928AF71AFAFA32AD /* Frameworks */,
+				57B3630A213CCF2E1915000132EFBBB9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-crowdLearning";
-			productName = "Pods-crowdLearning";
-			productReference = 8814A8905100328185252BA4DC050459 /* Pods_crowdLearning.framework */;
+			name = BAFluidView;
+			productName = BAFluidView;
+			productReference = 298B03DEC71C91C9513A1909DEC924D4 /* BAFluidView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -351,17 +451,26 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CE3B96A674ACC6FFC5F409F4D45ADBED /* Products */;
+			productRefGroup = DEFE4B87ADF3D00798BF8E93CA21FE8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95F156219327818DED0D06C06562E390 /* Pods-crowdLearning */,
+				FA96E1C8B668A4AA298CA4753042E43B /* BAFluidView */,
+				9761F65AF9A0F457CF0C8FCA806E9F71 /* Pods-crowdLearning */,
 				300074AFE41FEDDEE11B59DD6A7C2BA6 /* Pods-crowdLearningTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		848B8B88AA3C8E12EF5F0B5685591C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A859F0050E584F796B40F52BF9AAB029 /* Pods-crowdLearning-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3E973B14F5EC86692147497C1610A92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,18 +479,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE41E2DD9CF9FC9C2DF5AD92D02B31AD /* Sources */ = {
+		AF818696F7C611151662362C151157E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F425FB0382A222BE024BE6582C78A203 /* Pods-crowdLearning-dummy.m in Sources */,
+				4008D08BF45E74608C4F66F15A560363 /* BAFluidView-dummy.m in Sources */,
+				E16AC59AABC4FF37CF07B815AC3A878D /* BAFluidView.m in Sources */,
+				43751A3C0316E006243DFA4176181E95 /* UIColor+ColorWithHex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D67DBF2A7BBADC1942621BE34F98C020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BAFluidView;
+			target = FA96E1C8B668A4AA298CA4753042E43B /* BAFluidView */;
+			targetProxy = 1E82037BD964306C416CAD17CE5C63AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1AFC52A7782C55FF2380DB7D697E968A /* Release */ = {
+		11B0A5EB02438BAFAD63DF141E76CBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42671AF6EB5403E1A9D06BCD10EB3B15 /* BAFluidView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BAFluidView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BAFluidView/BAFluidView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BAFluidView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2BA7E8541D2DF6ED1BCAA95EAAB0D0BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C8296CF30C71BED4104CBB0FEA24EB7 /* Pods-crowdLearning.release.xcconfig */;
 			buildSettings = {
@@ -451,39 +600,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		41ADA38C0E6901E748D7A81B955E8FF5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12C4A9AAD5CF38CFBF0E16896447F95D /* Pods-crowdLearning.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-crowdLearning/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-crowdLearning/Pods-crowdLearning.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_crowdLearning;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -593,23 +709,94 @@
 			};
 			name = Debug;
 		};
+		71A01FA1A6517EA95F13D4EADD575735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C4A9AAD5CF38CFBF0E16896447F95D /* Pods-crowdLearning.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-crowdLearning/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-crowdLearning/Pods-crowdLearning.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_crowdLearning;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F835165434F1754C87B6ADDD3B85F73C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42671AF6EB5403E1A9D06BCD10EB3B15 /* BAFluidView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BAFluidView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BAFluidView/BAFluidView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BAFluidView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E76825CB84C5DA545F2871D85FE51B7 /* Build configuration list for PBXNativeTarget "Pods-crowdLearning" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				41ADA38C0E6901E748D7A81B955E8FF5 /* Debug */,
-				1AFC52A7782C55FF2380DB7D697E968A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
 				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EDC614525166725DAC395FEFD035664 /* Build configuration list for PBXNativeTarget "Pods-crowdLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A01FA1A6517EA95F13D4EADD575735 /* Debug */,
+				2BA7E8541D2DF6ED1BCAA95EAAB0D0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAD9DF96E5C05EF22302DFE793A4735 /* Build configuration list for PBXNativeTarget "BAFluidView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F835165434F1754C87B6ADDD3B85F73C /* Debug */,
+				11B0A5EB02438BAFAD63DF141E76CBF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
