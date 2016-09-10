@@ -13,6 +13,10 @@
 		00A44CE41D839791002FEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A44CE31D839791002FEC2E /* Assets.xcassets */; };
 		00A44CE71D839791002FEC2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */; };
 		00A44CF21D839791002FEC2E /* crowdLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A44CF11D839791002FEC2E /* crowdLearningTests.swift */; };
+		0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA61D83DEE200350615 /* landingViewController.swift */; };
+		0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA81D83E0BB00350615 /* LoadingView.swift */; };
+		0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */; };
+		0A8D5BAD1D83E3F400350615 /* WorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		00A44CED1D839791002FEC2E /* crowdLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crowdLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A44CF11D839791002FEC2E /* crowdLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crowdLearningTests.swift; sourceTree = "<group>"; };
 		00A44CF31D839791002FEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8D5BA61D83DEE200350615 /* landingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
+		0A8D5BA81D83E0BB00350615 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,10 @@
 				00A44CDC1D839791002FEC2E /* AppDelegate.swift */,
 				00A44CDE1D839791002FEC2E /* ViewController.swift */,
 				00A44CE01D839791002FEC2E /* Main.storyboard */,
+				0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */,
+				0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */,
+				0A8D5BA81D83E0BB00350615 /* LoadingView.swift */,
+				0A8D5BA61D83DEE200350615 /* landingViewController.swift */,
 				00A44CE31D839791002FEC2E /* Assets.xcassets */,
 				00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */,
 				00A44CE81D839791002FEC2E /* Info.plist */,
@@ -197,7 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */,
+				0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */,
+				0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */,
 				00A44CDF1D839791002FEC2E /* ViewController.swift in Sources */,
+				0A8D5BAD1D83E3F400350615 /* WorkingViewController.swift in Sources */,
 				00A44CDD1D839791002FEC2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +404,7 @@
 				00A44CF81D839791002FEC2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00A44CF91D839791002FEC2E /* Build configuration list for PBXNativeTarget "crowdLearningTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +413,7 @@
 				00A44CFB1D839791002FEC2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
