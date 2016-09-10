@@ -18,6 +18,7 @@ class RegistrationTableViewController: UITableViewController, UITextFieldDelegat
     @IBOutlet weak var city:UITextField!
     @IBOutlet weak var state:UITextField!
     @IBOutlet weak var zip:UITextField!
+    private var customerid = NSString()
     
     @IBAction func done(sender: UIBarButtonItem){
         let request = NSMutableURLRequest(URL: NSURL(string: "http://api.reimaginebanking.com/customers?key=18287c43fec33cb6c333a33deba4b003")!)
@@ -56,10 +57,9 @@ class RegistrationTableViewController: UITableViewController, UITextFieldDelegat
             if let created = dictionary!["objectCreated"] as? [String: AnyObject]{
                 if let id = created["_id"] as? String{
                     print("id is \(id)")
-
+                    customerid = id
                     let ref = FIRDatabase.database().reference()
                     ref.child("paymentId").setValue(id);
-                    
                     
                     let alert = UIAlertController(title: "Alert", message: "You will be paid shortly", preferredStyle: UIAlertControllerStyle.Alert)
                     self.presentViewController(alert, animated: true, completion: nil)
@@ -75,7 +75,57 @@ class RegistrationTableViewController: UITableViewController, UITextFieldDelegat
             }
         }
         task.resume()
+        
+        
+        
+        let request2 = NSMutableURLRequest(URL: NSURL(string: "http://api.reimaginebanking.com/customers/\(customerid)/accounts?key=18287c43fec33cb6c333a33deba4b003")!)
+        request2.HTTPMethod = "POST"
+        request2.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request2.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let requestDictionary2 = [
+            "type":"Credit Card",
+            "nickname": "string",
+            "rewards": 0,
+            "balanace" : 0
+        ]
+        
+        request2.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(requestDictionary2, options:[])
+        
+        let task2 = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {
+                print("error=\(error)")
+                return
+            }
+            
+            let responseString = String(data: data!, encoding: NSUTF8StringEncoding)
+            
+            print("responseString = \(responseString!)")
+            var dictionary = self.convertStringToDictionary(responseString!)
+            
+            if let created = dictionary!["objectCreated"] as? [String: AnyObject]{
+                if let id = created["_id"] as? String{
+                    print("id is \(id)")
+                    
+                    let ref = FIRDatabase.database().reference()
+                    ref.child("paymentId").setValue(id);
+                    
+                    let alert = UIAlertController(title: "Alert", message: "You will be paid shortly", preferredStyle: UIAlertControllerStyle.Alert)
+                    self.presentViewController(alert, animated: true, completion: nil)
+                    
+                    let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
+                    dispatch_after(delayTime, dispatch_get_main_queue()) {
+                        self.performSegueWithIdentifier("reset", sender: self)
+                    }
+                }
+            }
+            if let message = dictionary!["message"] as? String{
+                print("message is \(message)")
+            }
+        }
+        task2.resume()
     }
+    
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
