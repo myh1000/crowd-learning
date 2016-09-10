@@ -97,10 +97,9 @@ class ViewController: UIViewController {
 //                    print(epoch)
                 }
             }
-            print(self.network.hiddenWeights)
-            print(self.network.outputWeights)
-            self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
-            self.ref.setValue(["hiddenWeights":self.network.hiddenWeights])
+//            print(self.network.hiddenWeights)
+//            print(self.network.outputWeights)
+            self.ref.child("weights").setValue(["hiddenWeights":self.network.hiddenWeights.description, "outputWeights":self.network.outputWeights.description])
             self.network.writeToFile("data")
         }
     }
