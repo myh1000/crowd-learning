@@ -9,15 +9,19 @@
 import UIKit
 import BAFluidView
 import Foundation
+import Firebase
+import FirebaseDatabase
 
 class WorkingViewController: UIViewController {
 
     @IBOutlet weak var workingLabel: UILabel!
     var counter = 0
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let ref = FIRDatabase.database().reference()
+
         // Do any additional setup after loading the view, typically from a nib.
         
         setUpBackground()
@@ -46,7 +50,18 @@ class WorkingViewController: UIViewController {
                     self.containerView = myView
             })
         }
+        
+        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
+            print("sjdaskf")
+            print(snapshot.key)
+            print(snapshot.value)
+            if (snapshot.key == "request_recieved" && snapshot.value as! String == "false") {
+                print("ABHABHAHBAH")
+                self.performSegueWithIdentifier("unwindsmae", sender: self)
+            }
+        })
     }
+
 
     
     @IBOutlet weak var containerView: UIView!

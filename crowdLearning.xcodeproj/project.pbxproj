@@ -24,7 +24,6 @@
 		00B2E4831D83EB1C000AF88A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E4821D83EB1C000AF88A /* GoogleService-Info.plist */; };
 		0A34820F1D83EEEC0089584B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A34820E1D83EEEC0089584B /* CoreGraphics.framework */; };
 		0A3482111D83EFAA0089584B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3482101D83EFAA0089584B /* Foundation.framework */; };
-		0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA61D83DEE200350615 /* landingViewController.swift */; };
 		0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA81D83E0BB00350615 /* LoadingView.swift */; };
 		0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */; };
 		0A8D5BAD1D83E3F400350615 /* WorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */; };
@@ -65,7 +64,6 @@
 		0A34820A1D83EE390089584B /* crowdLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crowdLearning-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A34820E1D83EEEC0089584B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0A3482101D83EFAA0089584B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0A8D5BA61D83DEE200350615 /* landingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
 		0A8D5BA81D83E0BB00350615 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingViewController.swift; sourceTree = "<group>"; };
@@ -125,11 +123,10 @@
 				00A44CDC1D839791002FEC2E /* AppDelegate.swift */,
 				00B2E4711D83E7C5000AF88A /* SwiftAI */,
 				00A44CDE1D839791002FEC2E /* ViewController.swift */,
+				0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */,
 				00A44CE01D839791002FEC2E /* Main.storyboard */,
 				0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */,
-				0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */,
 				0A8D5BA81D83E0BB00350615 /* LoadingView.swift */,
-				0A8D5BA61D83DEE200350615 /* landingViewController.swift */,
 				00A44CE31D839791002FEC2E /* Assets.xcassets */,
 				00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */,
 				00A44CE81D839791002FEC2E /* Info.plist */,
@@ -386,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */,
 				0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */,
 				00B2E47C1D83E7FF000AF88A /* Matrix.swift in Sources */,
 				0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */,

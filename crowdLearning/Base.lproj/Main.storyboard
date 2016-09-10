@@ -39,7 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="join:" destination="Cuz-Iq-XRK" eventType="touchUpInside" id="97q-lJ-qKM"/>
-                                    <segue destination="f0N-Bo-B1W" kind="show" id="l4W-li-jB0"/>
+                                    <segue destination="f0N-Bo-B1W" kind="show" identifier="same" id="l4W-li-jB0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,12 +69,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2H-xO-QuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="1034"/>
+            <point key="canvasLocation" x="427" y="1045"/>
         </scene>
-        <!--View Controller-->
+        <!--Loading View Controller-->
         <scene sceneID="dT0-ml-7u1">
             <objects>
-                <viewController id="f0N-Bo-B1W" sceneMemberID="viewController">
+                <viewController id="f0N-Bo-B1W" customClass="LoadingViewController" customModule="crowdLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="54h-fR-q42"/>
                         <viewControllerLayoutGuide type="bottom" id="Zdq-Ll-D0i"/>
@@ -103,7 +103,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2Ay-fk-37B" kind="unwind" unwindAction="prepareForUnwind:" id="wuA-qi-dFh"/>
+                                    <segue destination="2Ay-fk-37B" kind="unwind" unwindAction="unwindtwo:" id="VIK-J3-QLZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,11 +117,14 @@
                             <constraint firstItem="QoW-ie-md6" firstAttribute="centerY" secondItem="HqS-Ro-qgi" secondAttribute="centerY" constant="-190" id="vst-xo-7Dc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="i0v-nr-Ooi" kind="show" identifier="done" id="2a8-ND-cz9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpw-hK-O84" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="2Ay-fk-37B" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1160" y="1034"/>
+            <point key="canvasLocation" x="1158" y="1026"/>
         </scene>
         <!--Working View Controller-->
         <scene sceneID="Ch0-5S-q52">
@@ -156,8 +159,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv7-JD-UKR">
-                                <rect key="frame" x="259" y="487" width="81" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="242" y="462.5" width="116" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -168,7 +171,7 @@
                             <constraint firstItem="uv7-JD-UKR" firstAttribute="centerX" secondItem="JTM-dS-mZS" secondAttribute="centerX" id="Wku-dV-9O3"/>
                             <constraint firstItem="Rkq-zW-E9M" firstAttribute="top" secondItem="JTM-dS-mZS" secondAttribute="top" id="ch2-XI-GMR"/>
                             <constraint firstItem="Rkq-zW-E9M" firstAttribute="leading" secondItem="JTM-dS-mZS" secondAttribute="leading" id="f5O-r2-phR"/>
-                            <constraint firstItem="uv7-JD-UKR" firstAttribute="centerY" secondItem="JTM-dS-mZS" secondAttribute="centerY" constant="200.5" id="gUe-xt-LTh"/>
+                            <constraint firstItem="uv7-JD-UKR" firstAttribute="centerY" secondItem="JTM-dS-mZS" secondAttribute="centerY" constant="180.5" id="gUe-xt-LTh"/>
                             <constraint firstItem="Lzr-zV-wMH" firstAttribute="top" secondItem="Rkq-zW-E9M" secondAttribute="bottom" id="gVl-pT-fAT"/>
                             <constraint firstItem="Q12-kA-llL" firstAttribute="centerX" secondItem="JTM-dS-mZS" secondAttribute="centerX" id="v6p-3x-fnY"/>
                             <constraint firstItem="Q12-kA-llL" firstAttribute="centerY" secondItem="JTM-dS-mZS" secondAttribute="centerY" constant="-215" id="yah-u6-Jlg"/>
@@ -177,9 +180,11 @@
                     <connections>
                         <outlet property="containerView" destination="Rkq-zW-E9M" id="0tC-rU-ajQ"/>
                         <outlet property="workingLabel" destination="uv7-JD-UKR" id="QbG-xS-LRR"/>
+                        <segue destination="ifL-8H-Ln5" kind="unwind" identifier="unwindsmae" unwindAction="unwindone:" id="nxr-Wm-5Kc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuc-IJ-QZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ifL-8H-Ln5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1849" y="1035"/>
         </scene>

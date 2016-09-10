@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-//import FirebaseDatabase
+import FirebaseDatabase
 
 class ViewController: UIViewController {
 
@@ -16,12 +16,12 @@ class ViewController: UIViewController {
     var numPoints = 0
     /// Serial queue for synchronizing access to neural network from multiple threads
     private let networkQueue = dispatch_queue_create("com.SwiftAI.networkQueue", DISPATCH_QUEUE_SERIAL)
-    private var network: FFNN!
+    var network: FFNN!
     private let filePath = NSHomeDirectory() + "/Documents/test"
     @IBOutlet weak var joinButton: UIButton!
 //    @IBOutlet weak var same: UIButton!
-    private var model : NSMutableDictionary = [:]
-    private var ref = FIRDatabaseReference()
+    var model : NSMutableDictionary = [:]
+    var ref = FIRDatabaseReference()
     var postDict: AnyObject?
 
     @IBAction func join(sender: AnyObject) {
@@ -57,6 +57,7 @@ class ViewController: UIViewController {
             self.model.setObject(snapshot.value!["num_inputs"] as! String, forKey: "num_inputs")
             self.model.setObject(snapshot.value!["learning_rate"] as! String, forKey: "learning_rate")
             self.model.setObject(snapshot.value!["num_outputs"] as! String, forKey: "num_outputs")
+            print("got here")
         }) { (error) in
             print(error.localizedDescription)
         }
@@ -64,16 +65,7 @@ class ViewController: UIViewController {
             let keyname = snapshot.key
             self.model.setObject(snapshot.value as! Int, forKey: keyname)
         })
-        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
-            if (snapshot.key == "request_recieved" && snapshot.value as! String == "true") {
-                self.network = FFNN(inputs: self.model.objectForKey("num_inputs")!.integerValue, hidden: self.model.objectForKey("hidden_size")!.integerValue, outputs: self.model.objectForKey("num_outputs")!.integerValue,
-                    learningRate: 0.7, momentum: 0.4, weights: nil,
-                    activationFunction : .Sigmoid, errorFunction: .CrossEntropy(average: false))
-                self.startTraining()
-                print("SAME")
-            }
-        })
-//        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
+        //        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
 //            let index = self.snapshots.indexOf(snapshot)
 //            self.snapshots.append(snapshot)
 //        })
@@ -81,35 +73,23 @@ class ViewController: UIViewController {
     }
     
 
-    func startTraining() {
-        // Dispatches training process to background thread
-        dispatch_async(self.networkQueue) {
-            var epoch = 0
-            while epoch < 1000 {
-                for index in 0..<self.numPoints {
-                    let x = (-500 + (Float(index) * 1000) / Float(self.numPoints)) / 100
-                    try! self.network.update(inputs: [x])
-                    let answer : Float = 3*x
-                    try! self.network.backpropagate(answer: [answer])
-                }
-                epoch += 1
-                if (epoch % 5 == 0) {
-//                    print(epoch)
-                }
-            }
-//            print(self.network.hiddenWeights)
-//            print(self.network.outputWeights)
-            self.ref.child("weights").setValue(["hiddenWeights":self.network.hiddenWeights.description, "outputWeights":self.network.outputWeights.description])
-            self.network.writeToFile("data")
-        }
-    }
-
         
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "same" {
+            if let destinationVC = segue.destinationViewController as? LoadingViewController {
+                destinationVC.model = self.model
+                destinationVC.network = self.network
+            }
+        }
+    }
+    
+    @IBAction func unwindtwo(segue: UIStoryboardSegue) {
+    }
 
 }
 
