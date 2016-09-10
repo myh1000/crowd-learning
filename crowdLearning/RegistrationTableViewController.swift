@@ -12,10 +12,8 @@ import FirebaseDatabase
 
 class RegistrationTableViewController: UITableViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var firstName:UITextField!
-    @IBOutlet weak var lastName:UITextField!
-    @IBOutlet weak var streetNumber:UITextField!
-    @IBOutlet weak var streetName:UITextField!
+    @IBOutlet weak var name:UITextField!
+    @IBOutlet weak var address:UITextField!
     
     @IBOutlet weak var city:UITextField!
     @IBOutlet weak var state:UITextField!
@@ -26,13 +24,16 @@ class RegistrationTableViewController: UITableViewController, UITextFieldDelegat
         request.HTTPMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
+
+        let fullNameArr = name.text!.componentsSeparatedByString(" ")
+        let fullAddressArr = address.text!.componentsSeparatedByString(" ")
         
         let requestDictionary = [
-            "first_name" : "\(firstName.text)",
-            "last_name" : "\(lastName.text)",
+            "first_name" : "\(fullNameArr[0])",
+            "last_name" : "\(fullNameArr[1])",
             "address"  : [
-                "street_number":"\(streetNumber.text!)",
-                "street_name":"\(streetName.text!)",
+                "street_number":"\(fullAddressArr[0])",
+                "street_name":"\(fullAddressArr[1])",
                 "city":"\(city.text!)",
                 "state":"\(state.text!)",
                 "zip":"\(zip.text!)"
@@ -84,10 +85,8 @@ class RegistrationTableViewController: UITableViewController, UITextFieldDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.firstName.delegate = self;
-        self.lastName.delegate = self;
-        self.streetNumber.delegate = self;
-        self.streetName.delegate = self;
+        self.name.delegate = self;
+        self.address.delegate = self;
         self.city.delegate = self;
         self.state.delegate = self;
         self.zip.delegate = self
