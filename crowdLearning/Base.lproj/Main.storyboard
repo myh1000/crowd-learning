@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -39,21 +38,14 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="join:" destination="Cuz-Iq-XRK" eventType="touchUpInside" id="97q-lJ-qKM"/>
                                     <segue destination="f0N-Bo-B1W" kind="show" id="l4W-li-jB0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtZ-xj-Jo1">
-                                <rect key="frame" x="466" y="477" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="same:" destination="Cuz-Iq-XRK" eventType="touchUpInside" id="h27-j2-oLd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k0n-Ds-Zvp" firstAttribute="top" secondItem="YBQ-An-whZ" secondAttribute="bottom" id="1fO-VV-UH0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FtZ-xj-Jo1" secondAttribute="trailing" constant="68" id="7BA-A6-4T0"/>
                             <constraint firstItem="iyP-BL-838" firstAttribute="centerX" secondItem="PSP-dq-N7Q" secondAttribute="centerX" id="9Cd-qp-1U1"/>
                             <constraint firstItem="k0n-Ds-Zvp" firstAttribute="top" secondItem="YBQ-An-whZ" secondAttribute="bottom" id="GRm-Xz-3IF"/>
                             <constraint firstItem="k0n-Ds-Zvp" firstAttribute="leading" secondItem="PSP-dq-N7Q" secondAttribute="leading" id="bpN-Qi-xNs"/>
@@ -63,7 +55,6 @@
                             <constraint firstAttribute="trailing" secondItem="k0n-Ds-Zvp" secondAttribute="trailing" id="tHK-qj-tNk"/>
                             <constraint firstItem="chB-0z-OE0" firstAttribute="centerX" secondItem="PSP-dq-N7Q" secondAttribute="centerX" id="uN6-Xm-Tc5"/>
                             <constraint firstItem="k0n-Ds-Zvp" firstAttribute="top" secondItem="PSP-dq-N7Q" secondAttribute="top" id="xjr-6f-Z1p"/>
-                            <constraint firstItem="29j-lY-7ei" firstAttribute="top" secondItem="FtZ-xj-Jo1" secondAttribute="bottom" constant="93" id="zov-PY-xfI"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
