@@ -7,6 +7,7 @@ target 'crowdLearning' do
 
   # Pods for crowdLearning
   pod 'Firebase', '>= 2.5.1'
+  pod 'Firebase/Database'
   target 'crowdLearningTests' do
     inherit! :search_paths
     # Pods for testing

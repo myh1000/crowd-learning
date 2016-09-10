@@ -21,6 +21,7 @@
 		00B2E47F1D83E7FF000AF88A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 00B2E4771D83E7FF000AF88A /* README.md */; };
 		00B2E4801D83E7FF000AF88A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2E4781D83E7FF000AF88A /* Storage.swift */; };
 		00B2E4811D83E7FF000AF88A /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2E4791D83E7FF000AF88A /* Vector.swift */; };
+		00B2E4831D83EB1C000AF88A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E4821D83EB1C000AF88A /* GoogleService-Info.plist */; };
 		0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA61D83DEE200350615 /* landingViewController.swift */; };
 		0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA81D83E0BB00350615 /* LoadingView.swift */; };
 		0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */; };
@@ -58,6 +59,7 @@
 		00B2E4771D83E7FF000AF88A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		00B2E4781D83E7FF000AF88A /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		00B2E4791D83E7FF000AF88A /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		00B2E4821D83EB1C000AF88A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A8D5BA61D83DEE200350615 /* landingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
 		0A8D5BA81D83E0BB00350615 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				00A44CE31D839791002FEC2E /* Assets.xcassets */,
 				00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */,
 				00A44CE81D839791002FEC2E /* Info.plist */,
+				00B2E4821D83EB1C000AF88A /* GoogleService-Info.plist */,
 			);
 			path = crowdLearning;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A44CE71D839791002FEC2E /* LaunchScreen.storyboard in Resources */,
+				00B2E4831D83EB1C000AF88A /* GoogleService-Info.plist in Resources */,
 				00A44CE41D839791002FEC2E /* Assets.xcassets in Resources */,
 				00A44CE21D839791002FEC2E /* Main.storyboard in Resources */,
 			);
