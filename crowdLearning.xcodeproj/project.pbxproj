@@ -7,84 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00A44CDD1D839791002FEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A44CDC1D839791002FEC2E /* AppDelegate.swift */; };
-		00A44CDF1D839791002FEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A44CDE1D839791002FEC2E /* ViewController.swift */; };
-		00A44CE21D839791002FEC2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A44CE01D839791002FEC2E /* Main.storyboard */; };
-		00A44CE41D839791002FEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A44CE31D839791002FEC2E /* Assets.xcassets */; };
-		00A44CE71D839791002FEC2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */; };
-		00A44CF21D839791002FEC2E /* crowdLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A44CF11D839791002FEC2E /* crowdLearningTests.swift */; };
-		0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA61D83DEE200350615 /* landingViewController.swift */; };
-		0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BA81D83E0BB00350615 /* LoadingView.swift */; };
-		0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */; };
-		0A8D5BAD1D83E3F400350615 /* WorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */; };
+		000CB9C41D83A72D006EEDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9C31D83A72D006EEDBB /* AppDelegate.swift */; };
+		000CB9C61D83A72D006EEDBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9C51D83A72D006EEDBB /* ViewController.swift */; };
+		000CB9C91D83A72D006EEDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000CB9C71D83A72D006EEDBB /* Main.storyboard */; };
+		000CB9CB1D83A72D006EEDBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000CB9CA1D83A72D006EEDBB /* Assets.xcassets */; };
+		000CB9CE1D83A72D006EEDBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000CB9CC1D83A72D006EEDBB /* LaunchScreen.storyboard */; };
+		000CB9D91D83A72D006EEDBB /* crowdLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9D81D83A72D006EEDBB /* crowdLearningTests.swift */; };
+		000CB9EC1D83A766006EEDBB /* FFNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9E41D83A766006EEDBB /* FFNN.swift */; };
+		000CB9ED1D83A766006EEDBB /* FFNN+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9E51D83A766006EEDBB /* FFNN+Storage.swift */; };
+		000CB9EE1D83A766006EEDBB /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9E61D83A766006EEDBB /* Matrix.swift */; };
+		000CB9EF1D83A766006EEDBB /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9E71D83A766006EEDBB /* Operations.swift */; };
+		000CB9F01D83A766006EEDBB /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9E81D83A766006EEDBB /* Random.swift */; };
+		000CB9F11D83A766006EEDBB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9E91D83A766006EEDBB /* README.md */; };
+		000CB9F21D83A766006EEDBB /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9EA1D83A766006EEDBB /* Storage.swift */; };
+		000CB9F31D83A766006EEDBB /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CB9EB1D83A766006EEDBB /* Vector.swift */; };
+		00B2E46E1D83DECF000AF88A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E46D1D83DECF000AF88A /* GoogleService-Info.plist */; };
+		50828C922508CC504722FD7F /* Pods_crowdLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CF697D2DE728C4CC741136 /* Pods_crowdLearningTests.framework */; };
+		61B390F281B1B8DB995D65F0 /* Pods_crowdLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F9F6C69DC22C24101DA5EE /* Pods_crowdLearning.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00A44CEE1D839791002FEC2E /* PBXContainerItemProxy */ = {
+		000CB9D51D83A72D006EEDBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 00A44CD11D839791002FEC2E /* Project object */;
+			containerPortal = 000CB9B81D83A72D006EEDBB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 00A44CD81D839791002FEC2E;
+			remoteGlobalIDString = 000CB9BF1D83A72D006EEDBB;
 			remoteInfo = crowdLearning;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A44CD91D839791002FEC2E /* crowdLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crowdLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00A44CDC1D839791002FEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00A44CDE1D839791002FEC2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00A44CE11D839791002FEC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		00A44CE31D839791002FEC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00A44CE61D839791002FEC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		00A44CE81D839791002FEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00A44CED1D839791002FEC2E /* crowdLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crowdLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00A44CF11D839791002FEC2E /* crowdLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crowdLearningTests.swift; sourceTree = "<group>"; };
-		00A44CF31D839791002FEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A8D5BA61D83DEE200350615 /* landingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
-		0A8D5BA81D83E0BB00350615 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		0A8D5BAA1D83E3E700350615 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		0A8D5BAC1D83E3F400350615 /* WorkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingViewController.swift; sourceTree = "<group>"; };
+		000CB9C01D83A72D006EEDBB /* crowdLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crowdLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000CB9C31D83A72D006EEDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		000CB9C51D83A72D006EEDBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		000CB9C81D83A72D006EEDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		000CB9CA1D83A72D006EEDBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000CB9CD1D83A72D006EEDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		000CB9CF1D83A72D006EEDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000CB9D41D83A72D006EEDBB /* crowdLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crowdLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000CB9D81D83A72D006EEDBB /* crowdLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crowdLearningTests.swift; sourceTree = "<group>"; };
+		000CB9DA1D83A72D006EEDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000CB9E41D83A766006EEDBB /* FFNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFNN.swift; sourceTree = "<group>"; };
+		000CB9E51D83A766006EEDBB /* FFNN+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Storage.swift"; sourceTree = "<group>"; };
+		000CB9E61D83A766006EEDBB /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		000CB9E71D83A766006EEDBB /* Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		000CB9E81D83A766006EEDBB /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		000CB9E91D83A766006EEDBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		000CB9EA1D83A766006EEDBB /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		000CB9EB1D83A766006EEDBB /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		00B2E46D1D83DECF000AF88A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E6E1EB3E5CC4A3644375FBF /* Pods-crowdLearningTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearningTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5113C951388843FE7BCBAB1D /* Pods-crowdLearningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearningTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests.release.xcconfig"; sourceTree = "<group>"; };
+		97F9F6C69DC22C24101DA5EE /* Pods_crowdLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowdLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E77AE46CC2E41A764489D5 /* Pods-crowdLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning.debug.xcconfig"; sourceTree = "<group>"; };
+		E8935DE6037474F00AE309C4 /* Pods-crowdLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crowdLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning.release.xcconfig"; sourceTree = "<group>"; };
+		F8CF697D2DE728C4CC741136 /* Pods_crowdLearningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crowdLearningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00A44CD61D839791002FEC2E /* Frameworks */ = {
+		000CB9BD1D83A72D006EEDBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B390F281B1B8DB995D65F0 /* Pods_crowdLearning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00A44CEA1D839791002FEC2E /* Frameworks */ = {
+		000CB9D11D83A72D006EEDBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50828C922508CC504722FD7F /* Pods_crowdLearningTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00A44CD01D839791002FEC2E = {
+		000CB9B71D83A72D006EEDBB = {
 			isa = PBXGroup;
 			children = (
-				00A44CDB1D839791002FEC2E /* crowdLearning */,
-				00A44CF01D839791002FEC2E /* crowdLearningTests */,
-				00A44CDA1D839791002FEC2E /* Products */,
+				000CB9C21D83A72D006EEDBB /* crowdLearning */,
+				000CB9D71D83A72D006EEDBB /* crowdLearningTests */,
+				000CB9C11D83A72D006EEDBB /* Products */,
+				3B5D892F1907BAFE9EFE33E6 /* Pods */,
+				2F6B28FC25A0B9D688C93A50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		00A44CDA1D839791002FEC2E /* Products */ = {
+		000CB9C11D83A72D006EEDBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00A44CD91D839791002FEC2E /* crowdLearning.app */,
-				00A44CED1D839791002FEC2E /* crowdLearningTests.xctest */,
+				000CB9C01D83A72D006EEDBB /* crowdLearning.app */,
+				000CB9D41D83A72D006EEDBB /* crowdLearningTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00A44CDB1D839791002FEC2E /* crowdLearning */ = {
+		000CB9C21D83A72D006EEDBB /* crowdLearning */ = {
 			isa = PBXGroup;
 			children = (
+
 				00A44CDC1D839791002FEC2E /* AppDelegate.swift */,
 				00A44CDE1D839791002FEC2E /* ViewController.swift */,
 				00A44CE01D839791002FEC2E /* Main.storyboard */,
@@ -95,29 +119,70 @@
 				00A44CE31D839791002FEC2E /* Assets.xcassets */,
 				00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */,
 				00A44CE81D839791002FEC2E /* Info.plist */,
+				00B2E46D1D83DECF000AF88A /* GoogleService-Info.plist */,
+				000CB9E31D83A759006EEDBB /* SwiftAI */,
+
 			);
 			path = crowdLearning;
 			sourceTree = "<group>";
 		};
-		00A44CF01D839791002FEC2E /* crowdLearningTests */ = {
+		000CB9D71D83A72D006EEDBB /* crowdLearningTests */ = {
 			isa = PBXGroup;
 			children = (
-				00A44CF11D839791002FEC2E /* crowdLearningTests.swift */,
-				00A44CF31D839791002FEC2E /* Info.plist */,
+				000CB9D81D83A72D006EEDBB /* crowdLearningTests.swift */,
+				000CB9DA1D83A72D006EEDBB /* Info.plist */,
 			);
 			path = crowdLearningTests;
+			sourceTree = "<group>";
+		};
+		000CB9E31D83A759006EEDBB /* SwiftAI */ = {
+			isa = PBXGroup;
+			children = (
+				000CB9E41D83A766006EEDBB /* FFNN.swift */,
+				000CB9E51D83A766006EEDBB /* FFNN+Storage.swift */,
+				000CB9E61D83A766006EEDBB /* Matrix.swift */,
+				000CB9E71D83A766006EEDBB /* Operations.swift */,
+				000CB9E81D83A766006EEDBB /* Random.swift */,
+				000CB9E91D83A766006EEDBB /* README.md */,
+				000CB9EA1D83A766006EEDBB /* Storage.swift */,
+				000CB9EB1D83A766006EEDBB /* Vector.swift */,
+			);
+			name = SwiftAI;
+			sourceTree = "<group>";
+		};
+		2F6B28FC25A0B9D688C93A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97F9F6C69DC22C24101DA5EE /* Pods_crowdLearning.framework */,
+				F8CF697D2DE728C4CC741136 /* Pods_crowdLearningTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B5D892F1907BAFE9EFE33E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9E77AE46CC2E41A764489D5 /* Pods-crowdLearning.debug.xcconfig */,
+				E8935DE6037474F00AE309C4 /* Pods-crowdLearning.release.xcconfig */,
+				1E6E1EB3E5CC4A3644375FBF /* Pods-crowdLearningTests.debug.xcconfig */,
+				5113C951388843FE7BCBAB1D /* Pods-crowdLearningTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00A44CD81D839791002FEC2E /* crowdLearning */ = {
+		000CB9BF1D83A72D006EEDBB /* crowdLearning */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00A44CF61D839791002FEC2E /* Build configuration list for PBXNativeTarget "crowdLearning" */;
+			buildConfigurationList = 000CB9DD1D83A72D006EEDBB /* Build configuration list for PBXNativeTarget "crowdLearning" */;
 			buildPhases = (
-				00A44CD51D839791002FEC2E /* Sources */,
-				00A44CD61D839791002FEC2E /* Frameworks */,
-				00A44CD71D839791002FEC2E /* Resources */,
+				DC1BEB1B3E9AB5A005E63E0F /* 📦 Check Pods Manifest.lock */,
+				000CB9BC1D83A72D006EEDBB /* Sources */,
+				000CB9BD1D83A72D006EEDBB /* Frameworks */,
+				000CB9BE1D83A72D006EEDBB /* Resources */,
+				8C04DBAD210104CA10F5B22E /* 📦 Embed Pods Frameworks */,
+				C495541C5621144AED208D5B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,47 +190,50 @@
 			);
 			name = crowdLearning;
 			productName = crowdLearning;
-			productReference = 00A44CD91D839791002FEC2E /* crowdLearning.app */;
+			productReference = 000CB9C01D83A72D006EEDBB /* crowdLearning.app */;
 			productType = "com.apple.product-type.application";
 		};
-		00A44CEC1D839791002FEC2E /* crowdLearningTests */ = {
+		000CB9D31D83A72D006EEDBB /* crowdLearningTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00A44CF91D839791002FEC2E /* Build configuration list for PBXNativeTarget "crowdLearningTests" */;
+			buildConfigurationList = 000CB9E01D83A72D006EEDBB /* Build configuration list for PBXNativeTarget "crowdLearningTests" */;
 			buildPhases = (
-				00A44CE91D839791002FEC2E /* Sources */,
-				00A44CEA1D839791002FEC2E /* Frameworks */,
-				00A44CEB1D839791002FEC2E /* Resources */,
+				8A0CE7E6FC8C1DA2F804469F /* 📦 Check Pods Manifest.lock */,
+				000CB9D01D83A72D006EEDBB /* Sources */,
+				000CB9D11D83A72D006EEDBB /* Frameworks */,
+				000CB9D21D83A72D006EEDBB /* Resources */,
+				115C6023ECFF441EB78C7DB2 /* 📦 Embed Pods Frameworks */,
+				CE533C7473051671832A749C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				00A44CEF1D839791002FEC2E /* PBXTargetDependency */,
+				000CB9D61D83A72D006EEDBB /* PBXTargetDependency */,
 			);
 			name = crowdLearningTests;
 			productName = crowdLearningTests;
-			productReference = 00A44CED1D839791002FEC2E /* crowdLearningTests.xctest */;
+			productReference = 000CB9D41D83A72D006EEDBB /* crowdLearningTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		00A44CD11D839791002FEC2E /* Project object */ = {
+		000CB9B81D83A72D006EEDBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = myh1000;
 				TargetAttributes = {
-					00A44CD81D839791002FEC2E = {
+					000CB9BF1D83A72D006EEDBB = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
-					00A44CEC1D839791002FEC2E = {
+					000CB9D31D83A72D006EEDBB = {
 						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 00A44CD81D839791002FEC2E;
+						TestTargetID = 000CB9BF1D83A72D006EEDBB;
 					};
 				};
 			};
-			buildConfigurationList = 00A44CD41D839791002FEC2E /* Build configuration list for PBXProject "crowdLearning" */;
+			buildConfigurationList = 000CB9BB1D83A72D006EEDBB /* Build configuration list for PBXProject "crowdLearning" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,29 +241,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 00A44CD01D839791002FEC2E;
-			productRefGroup = 00A44CDA1D839791002FEC2E /* Products */;
+			mainGroup = 000CB9B71D83A72D006EEDBB;
+			productRefGroup = 000CB9C11D83A72D006EEDBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00A44CD81D839791002FEC2E /* crowdLearning */,
-				00A44CEC1D839791002FEC2E /* crowdLearningTests */,
+				000CB9BF1D83A72D006EEDBB /* crowdLearning */,
+				000CB9D31D83A72D006EEDBB /* crowdLearningTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00A44CD71D839791002FEC2E /* Resources */ = {
+		000CB9BE1D83A72D006EEDBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A44CE71D839791002FEC2E /* LaunchScreen.storyboard in Resources */,
-				00A44CE41D839791002FEC2E /* Assets.xcassets in Resources */,
-				00A44CE21D839791002FEC2E /* Main.storyboard in Resources */,
+				000CB9CE1D83A72D006EEDBB /* LaunchScreen.storyboard in Resources */,
+				00B2E46E1D83DECF000AF88A /* GoogleService-Info.plist in Resources */,
+				000CB9CB1D83A72D006EEDBB /* Assets.xcassets in Resources */,
+				000CB9C91D83A72D006EEDBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00A44CEB1D839791002FEC2E /* Resources */ = {
+		000CB9D21D83A72D006EEDBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,51 +273,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		115C6023ECFF441EB78C7DB2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A0CE7E6FC8C1DA2F804469F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C04DBAD210104CA10F5B22E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C495541C5621144AED208D5B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowdLearning/Pods-crowdLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE533C7473051671832A749C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crowdLearningTests/Pods-crowdLearningTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC1BEB1B3E9AB5A005E63E0F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		00A44CD51D839791002FEC2E /* Sources */ = {
+		000CB9BC1D83A72D006EEDBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				0A8D5BA71D83DEE200350615 /* landingViewController.swift in Sources */,
 				0A8D5BA91D83E0BB00350615 /* LoadingView.swift in Sources */,
 				0A8D5BAB1D83E3E700350615 /* LoadingViewController.swift in Sources */,
 				00A44CDF1D839791002FEC2E /* ViewController.swift in Sources */,
 				0A8D5BAD1D83E3F400350615 /* WorkingViewController.swift in Sources */,
 				00A44CDD1D839791002FEC2E /* AppDelegate.swift in Sources */,
+				000CB9EC1D83A766006EEDBB /* FFNN.swift in Sources */,
+				000CB9EE1D83A766006EEDBB /* Matrix.swift in Sources */,
+				000CB9F31D83A766006EEDBB /* Vector.swift in Sources */,
+				000CB9ED1D83A766006EEDBB /* FFNN+Storage.swift in Sources */,
+				000CB9EF1D83A766006EEDBB /* Operations.swift in Sources */,
+				000CB9F21D83A766006EEDBB /* Storage.swift in Sources */,
+				000CB9F11D83A766006EEDBB /* README.md in Sources */,
+				000CB9F01D83A766006EEDBB /* Random.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00A44CE91D839791002FEC2E /* Sources */ = {
+		000CB9D01D83A72D006EEDBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A44CF21D839791002FEC2E /* crowdLearningTests.swift in Sources */,
+				000CB9D91D83A72D006EEDBB /* crowdLearningTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00A44CEF1D839791002FEC2E /* PBXTargetDependency */ = {
+		000CB9D61D83A72D006EEDBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00A44CD81D839791002FEC2E /* crowdLearning */;
-			targetProxy = 00A44CEE1D839791002FEC2E /* PBXContainerItemProxy */;
+			target = 000CB9BF1D83A72D006EEDBB /* crowdLearning */;
+			targetProxy = 000CB9D51D83A72D006EEDBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		00A44CE01D839791002FEC2E /* Main.storyboard */ = {
+		000CB9C71D83A72D006EEDBB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				00A44CE11D839791002FEC2E /* Base */,
+				000CB9C81D83A72D006EEDBB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		00A44CE51D839791002FEC2E /* LaunchScreen.storyboard */ = {
+		000CB9CC1D83A72D006EEDBB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				00A44CE61D839791002FEC2E /* Base */,
+				000CB9CD1D83A72D006EEDBB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -256,7 +428,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		00A44CF41D839791002FEC2E /* Debug */ = {
+		000CB9DB1D83A72D006EEDBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,7 +473,7 @@
 			};
 			name = Debug;
 		};
-		00A44CF51D839791002FEC2E /* Release */ = {
+		000CB9DC1D83A72D006EEDBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,8 +511,9 @@
 			};
 			name = Release;
 		};
-		00A44CF71D839791002FEC2E /* Debug */ = {
+		000CB9DE1D83A72D006EEDBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9E77AE46CC2E41A764489D5 /* Pods-crowdLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = crowdLearning/Info.plist;
@@ -350,8 +523,9 @@
 			};
 			name = Debug;
 		};
-		00A44CF81D839791002FEC2E /* Release */ = {
+		000CB9DF1D83A72D006EEDBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8935DE6037474F00AE309C4 /* Pods-crowdLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = crowdLearning/Info.plist;
@@ -361,8 +535,9 @@
 			};
 			name = Release;
 		};
-		00A44CFA1D839791002FEC2E /* Debug */ = {
+		000CB9E11D83A72D006EEDBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6E1EB3E5CC4A3644375FBF /* Pods-crowdLearningTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = crowdLearningTests/Info.plist;
@@ -373,8 +548,9 @@
 			};
 			name = Debug;
 		};
-		00A44CFB1D839791002FEC2E /* Release */ = {
+		000CB9E21D83A72D006EEDBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5113C951388843FE7BCBAB1D /* Pods-crowdLearningTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = crowdLearningTests/Info.plist;
@@ -388,34 +564,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00A44CD41D839791002FEC2E /* Build configuration list for PBXProject "crowdLearning" */ = {
+		000CB9BB1D83A72D006EEDBB /* Build configuration list for PBXProject "crowdLearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00A44CF41D839791002FEC2E /* Debug */,
-				00A44CF51D839791002FEC2E /* Release */,
+				000CB9DB1D83A72D006EEDBB /* Debug */,
+				000CB9DC1D83A72D006EEDBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00A44CF61D839791002FEC2E /* Build configuration list for PBXNativeTarget "crowdLearning" */ = {
+		000CB9DD1D83A72D006EEDBB /* Build configuration list for PBXNativeTarget "crowdLearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00A44CF71D839791002FEC2E /* Debug */,
-				00A44CF81D839791002FEC2E /* Release */,
+				000CB9DE1D83A72D006EEDBB /* Debug */,
+				000CB9DF1D83A72D006EEDBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00A44CF91D839791002FEC2E /* Build configuration list for PBXNativeTarget "crowdLearningTests" */ = {
+		000CB9E01D83A72D006EEDBB /* Build configuration list for PBXNativeTarget "crowdLearningTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00A44CFA1D839791002FEC2E /* Debug */,
-				00A44CFB1D839791002FEC2E /* Release */,
+				000CB9E11D83A72D006EEDBB /* Debug */,
+				000CB9E21D83A72D006EEDBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 00A44CD11D839791002FEC2E /* Project object */;
+	rootObject = 000CB9B81D83A72D006EEDBB /* Project object */;
 }
