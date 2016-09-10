@@ -16,12 +16,12 @@ class LoadingViewController: UIViewController {
     var network: FFNN!
     private let networkQueue = dispatch_queue_create("com.SwiftAI.networkQueue", DISPATCH_QUEUE_SERIAL)
     var numPoints = 0
+    var eyedee = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let ref = FIRDatabase.database().reference()
-
         ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
             print("sjdaskf")
             print(snapshot.key)
@@ -57,6 +57,9 @@ class LoadingViewController: UIViewController {
             }
             //            print(self.network.hiddenWeights)
             //            print(self.network.outputWeights)
+            print("Asdfasdfasdf \(self.eyedee)");
+            
+            ref.child("status\(Int(self.eyedee-1))").setValue("revieve");
             
             ref.child("weights").setValue(["hiddenWeights":self.network.hiddenWeights.description, "outputWeights":self.network.outputWeights.description])
             self.network.writeToFile("data")

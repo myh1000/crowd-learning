@@ -23,7 +23,8 @@ class ViewController: UIViewController {
     var model : NSMutableDictionary = [:]
     var ref = FIRDatabaseReference()
     var postDict: AnyObject?
-
+    var eyedee = Int()
+    
     @IBAction func join(sender: AnyObject) {
         let request = NSMutableURLRequest(URL: NSURL(string: "http://47ebd870.ngrok.io/servant_connect")!)
         
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
             
             let responseString = String(data: data!, encoding: NSUTF8StringEncoding)
             print("responseString = \(responseString)")
+            self.eyedee = Int(responseString!)!
         }
         task.resume()
     }
@@ -57,14 +59,15 @@ class ViewController: UIViewController {
             self.model.setObject(snapshot.value!["num_inputs"] as! String, forKey: "num_inputs")
             self.model.setObject(snapshot.value!["learning_rate"] as! String, forKey: "learning_rate")
             self.model.setObject(snapshot.value!["num_outputs"] as! String, forKey: "num_outputs")
-            print("got here")
         }) { (error) in
             print(error.localizedDescription)
         }
         ref.child("model_structure").observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
             let keyname = snapshot.key
-            self.model.setObject(snapshot.value as! Int, forKey: keyname)
+            self.model.setObject((snapshot.value as! NSString).doubleValue, forKey: keyname)
         })
+        
+
         //        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
 //            let index = self.snapshots.indexOf(snapshot)
 //            self.snapshots.append(snapshot)
@@ -80,10 +83,14 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "same" {
-            if let destinationVC = segue.destinationViewController as? LoadingViewController {
-                destinationVC.model = self.model
-                destinationVC.network = self.network
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            if segue.identifier == "same" {
+                if let destinationVC = segue.destinationViewController as? LoadingViewController {
+                    destinationVC.model = self.model
+                    destinationVC.network = self.network
+                    destinationVC.eyedee = self.eyedee
+                }
             }
         }
     }
