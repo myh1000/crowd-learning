@@ -107,6 +107,7 @@ class LoadingViewController: UIViewController {
                 ref.child("weights").setValue(["hiddenWeights":self.network.hiddenWeights.description, "outputWeights":self.network.outputWeights.description])
             }
 //            self.network.writeToFile("data")
+
         }
     }
     
