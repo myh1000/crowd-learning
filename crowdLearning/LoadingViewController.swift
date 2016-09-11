@@ -21,7 +21,7 @@ class LoadingViewController: UIViewController {
     var weights = NSMutableDictionary()
     var newhidden = false
     var newoutput = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -78,13 +78,24 @@ class LoadingViewController: UIViewController {
 //                for (NSString* string in arrayOfStrings) {
 //                    [arrayOfNumbers addObject:[NSDecimalNumber decimalNumberWithString:string]];
 //                }
-                self.startTraining()
+                self.startTrainingB()
             }
         })
     }
     
     func sineFunc(x: Float) -> Float {
         return (0.5 * sin(1.5 * x * Float(M_PI))) + 0.5
+    }
+    func startTrainingB() {
+        let ref = FIRDatabase.database().reference()
+        ref.child("request_recieved").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            if(snapshot.value as! String == "false") {
+                
+            }
+            else {
+                self.startTraining()
+            }
+        })
     }
 
     func startTraining() {
