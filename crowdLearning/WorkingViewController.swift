@@ -65,7 +65,7 @@ class WorkingViewController: UIViewController {
                 if(snapshot.value as! Int > 5)
                 {
                     print("got into this derp thing");
-                    self.performSegueWithIdentifier("doneSegue", sender: self)
+                    self.performSegueWithIdentifier("DoneSegue", sender: self)
                 }
             }
         })
