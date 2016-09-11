@@ -33,7 +33,7 @@ class LoadingViewController: UIViewController {
             if (snapshot.key == "request_recieved" && snapshot.value as! String == "true") {
                 self.network = FFNN(inputs: self.model.objectForKey("num_inputs")!.integerValue, hidden: self.model.objectForKey("hidden_size")!.integerValue, outputs: self.model.objectForKey("num_outputs")!.integerValue,
                     learningRate: 0.7, momentum: 0.4, weights: nil,
-                    activationFunction : .Sigmoid, errorFunction: .CrossEntropy(average: false))
+                    activationFunction : .Sigmoid, errorFunction: .Default(average: false))
                 self.startTraining()
                 print("SAME")
                 self.performSegueWithIdentifier("done", sender: self)
@@ -57,7 +57,7 @@ class LoadingViewController: UIViewController {
                 ref.child("working_text\(Int(self.eyedee-1))").setValue("Starting Learning")
                 let newHiddenWeights : String = self.weights.valueForKey("newHiddenWeights") as! String
                 let newOutputWeights : String = self.weights.valueForKey("newOutputWeights") as! String
-                print(newHiddenWeights)
+                
                 let splitHidden = newHiddenWeights.characters.split{$0 == ","}.map(String.init)
                 let splitOutput = newOutputWeights.characters.split{$0 == ","}.map(String.init)
                 
@@ -99,14 +99,14 @@ class LoadingViewController: UIViewController {
             ref.child("working_text\(Int(self.eyedee-1))").setValue("Training...")
 //            print((self.weights.valueForKey("newHiddenWeights") as! [Float])[0])
             
+            let idx = 300
             
-            
-            while epoch < 10 {
-                var answerArray = Array(count:1000, repeatedValue:[Float]())
-                var outputArray = Array(count:1000, repeatedValue:[Float]())
+            while epoch < 50 {
+                var answerArray = Array(count:idx, repeatedValue:[Float]())
+                var outputArray = Array(count:idx, repeatedValue:[Float]())
                 
-                for index in 0 ..< 1000 {
-                    let x = Float(index) / 2000.0
+                for index in 0 ..< idx {
+                    let x = Float(index) / 100.0
                     try! self.network.update(inputs: [x])
                     let answer = self.sineFunc(x)
 //                    let answer = 2*x
@@ -117,18 +117,23 @@ class LoadingViewController: UIViewController {
                     try! self.network.backpropagate(answer: [answer])
                 }
                 epoch += 1
-                if (epoch % 25 == 0) {
+//                if (epoch % 25 == 0) {
 //                    print(answerArray)
 //                    print("kk")
 //                    print(outputArray)
-                }
+//                }
 //                print(try! self.network.error(outputArray, expected: answerArray))
                 var total = Float(0.0)
-                for i in 0 ..< 1000
+                let resultArray = NSMutableArray()
+                for i in 0 ..< idx
                 {
                     total += powf(Float(outputArray[i][0] - answerArray[i][0]),Float(2.0))
+                    resultArray.addObject(outputArray[i][0])
                 }
+                print(total)
+//                print(resultArray)
                 ref.child("accuracy").setValue(total);
+                ref.child("results").setValue(resultArray);
 
             }
             
