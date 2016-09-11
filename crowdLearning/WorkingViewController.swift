@@ -56,6 +56,27 @@ class WorkingViewController: UIViewController {
         ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
             if (snapshot.key == "request_recieved" && snapshot.value as! String == "false") {
 //                self.performSegueWithIdentifier("unwindsmae", sender: self)
+                
+                let request = NSMutableURLRequest(URL: NSURL(string: "http://47ebd870.ngrok.io/servant_disconnect")!)
+                
+                request.HTTPMethod = "POST"
+                let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+                    guard error == nil && data != nil else {
+                        print("error=\(error)")
+                        return
+                    }
+                    
+                    if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200
+                    {
+                        print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                        print("response = \(response)")
+                    }
+                    
+                    let responseString = String(data: data!, encoding: NSUTF8StringEncoding)
+                    print("responseString = \(responseString)")
+                }
+                task.resume()
+
             }
             else if (snapshot.key == "working_tex\(Int(self.eyedee-1))t") {
                 self.workingLabel.text = snapshot.value as? String
