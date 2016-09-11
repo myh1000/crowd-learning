@@ -60,6 +60,14 @@ class WorkingViewController: UIViewController {
             else if (snapshot.key == "working_tex\(Int(self.eyedee-1))t") {
                 self.workingLabel.text = snapshot.value as? String
             }
+            else if(snapshot.key == "iters")
+            {
+                if(snapshot.value as! Int > 5)
+                {
+                    print("got into this derp thing");
+                    self.performSegueWithIdentifier("doneSegue", sender: self)
+                }
+            }
         })
     }
 
