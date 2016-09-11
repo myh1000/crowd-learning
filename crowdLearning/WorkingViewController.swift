@@ -55,7 +55,7 @@ class WorkingViewController: UIViewController {
         })
         ref.observeEventType(.ChildChanged, withBlock: { (snapshot) -> Void in
             if (snapshot.key == "request_recieved" && snapshot.value as! String == "false") {
-                self.performSegueWithIdentifier("unwindsmae", sender: self)
+//                self.performSegueWithIdentifier("unwindsmae", sender: self)
             }
             else if (snapshot.key == "working_tex\(Int(self.eyedee-1))t") {
                 self.workingLabel.text = snapshot.value as? String
@@ -65,6 +65,7 @@ class WorkingViewController: UIViewController {
                 if(snapshot.value as! Int > 5)
                 {
                     print("got into this derp thing");
+                    ref.child("request_recieved").setValue("false")
                     self.performSegueWithIdentifier("doneSegue", sender: self)
                 }
             }
