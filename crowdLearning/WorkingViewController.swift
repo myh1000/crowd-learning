@@ -62,7 +62,7 @@ class WorkingViewController: UIViewController {
             }
             else if(snapshot.key == "iters")
             {
-                if(snapshot.value as! Int > 5)
+                if(snapshot.value as! Int > 15)
                 {
                     print("got into this derp thing");
                     ref.child("request_recieved").setValue("false")
