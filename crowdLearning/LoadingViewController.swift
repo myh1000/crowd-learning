@@ -132,9 +132,10 @@ class LoadingViewController: UIViewController {
                 }
                 print(total)
 //                print(resultArray)
-                ref.child("accuracy").setValue(total);
-                ref.child("results").setValue(resultArray);
-
+                if (epoch == 49) {
+                    ref.child("accuracy").setValue(total);
+                    ref.child("results").setValue(resultArray);
+                }
             }
             
             let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(Float(Float(arc4random()) / Float(UINT32_MAX)) * Float(NSEC_PER_SEC)))
